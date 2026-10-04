@@ -26,6 +26,9 @@
 | R-022 | 최신 customer accounts 진입 | shopify-account component | 구현 |
 | R-023 | Contact / collection index | page.contact + list-collections | 구현 |
 | R-024 | Ajax add-to-cart + live cart count | theme.js + cart notification | 구현 |
+| R-025 | Theme editor design controls / FAQ | settings + page.faq | 구현 |
+| R-026 | Journal / article content | blog + article templates | 구현 |
+| R-027 | Coming soon / private access | password layout + template | 구현 |
 
 ## 완료 정의
 

@@ -257,6 +257,181 @@ shopify-account {
   color: var(--ma-muted);
 }
 
+.journal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  padding-block: 1rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.journal-tags a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem 1rem;
+}
+
+.journal-card__media {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #e3e0d9;
+  border-radius: var(--media-radius);
+}
+
+.journal-card__media img,
+.journal-card__placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journal-card__meta {
+  padding-top: 1rem;
+}
+
+.journal-card__meta h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+  margin-bottom: .8rem;
+}
+
+.journal-card__meta > p:last-child {
+  color: var(--ma-muted);
+}
+
+.article {
+  padding-block: clamp(4rem, 8vw, 8rem);
+}
+
+.article__header,
+.article__content,
+.article__tags,
+.article__navigation,
+.article-comments {
+  width: min(100%, 780px);
+  margin-inline: auto;
+}
+
+.article__header {
+  padding-bottom: 3rem;
+}
+
+.article__header h1 {
+  font-size: clamp(3rem, 7vw, 7rem);
+}
+
+.article__author {
+  color: var(--ma-muted);
+}
+
+.article__hero {
+  width: min(100%, 1600px);
+  margin: 0 auto 4rem;
+  overflow: hidden;
+  border-radius: var(--media-radius);
+}
+
+.article__hero img {
+  width: 100%;
+  max-height: 86vh;
+  object-fit: cover;
+}
+
+.article__content {
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.article__content img {
+  margin-block: 2rem;
+  border-radius: var(--media-radius);
+}
+
+.article__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  padding-block: 2rem;
+  margin-top: 3rem;
+  border-block: 1px solid var(--border);
+}
+
+.article__tags a {
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article__navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block: 2rem 4rem;
+}
+
+.article-comments {
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.article-comments h2 {
+  font-size: 2rem;
+}
+
+.article-comment {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-comment footer {
+  font-size: 11px;
+  color: var(--ma-muted);
+}
+
+.comment-form {
+  display: grid;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.password-main {
+  min-height: 100svh;
+  display: grid;
+}
+
+.password-page {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: clamp(3rem, 10vw, 10rem);
+  padding-block: 4rem;
+}
+
+.password-page__brand h1 {
+  max-width: 9ch;
+}
+
+.password-page__message {
+  max-width: 36rem;
+  color: var(--ma-muted);
+}
+
+.password-page__forms {
+  display: grid;
+  gap: 3rem;
+  align-content: center;
+}
+
+.password-form {
+  display: grid;
+  gap: .8rem;
+}
+
 @media (max-width: 989px) {
   .contact-layout {
     grid-template-columns: 1fr;
@@ -267,6 +442,14 @@ shopify-account {
   }
 
   .content-accordion {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .password-page {
     grid-template-columns: 1fr;
   }
 }
@@ -290,5 +473,13 @@ shopify-account {
 
   .content-accordion {
     padding-block: 4rem;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article__navigation {
+    flex-direction: column;
   }
 }

@@ -126,5 +126,29 @@
     "submit": "문의 보내기",
     "success_title": "문의가 접수되었습니다.",
     "success_body": "입력하신 이메일을 통해 답변드리겠습니다."
+  },
+  "journal": {
+    "eyebrow": "저널",
+    "tags": "저널 태그",
+    "all": "전체 스토리",
+    "empty": "아직 공개된 스토리가 없습니다.",
+    "by_author": "{{ author }} 작성",
+    "article_navigation": "다른 저널 스토리",
+    "comments": "댓글",
+    "comment_success": "댓글이 등록되었습니다.",
+    "name": "이름",
+    "email": "이메일",
+    "comment": "댓글 내용",
+    "submit_comment": "댓글 등록"
+  },
+  "password": {
+    "title": "비공개 접근",
+    "access": "비공개 접근",
+    "password": "비밀번호",
+    "enter": "스토어 입장",
+    "updates": "런칭 소식",
+    "email": "이메일 주소",
+    "notify": "소식 받기",
+    "success": "런칭 알림 목록에 등록되었습니다."
   }
 }

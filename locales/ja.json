@@ -126,5 +126,29 @@
     "submit": "送信",
     "success_title": "お問い合わせを受け付けました。",
     "success_body": "ご入力いただいたメールアドレスへ返信いたします。"
+  },
+  "journal": {
+    "eyebrow": "ジャーナル",
+    "tags": "ジャーナルタグ",
+    "all": "すべての記事",
+    "empty": "まだ記事が公開されていません。",
+    "by_author": "{{ author }} による記事",
+    "article_navigation": "他の記事",
+    "comments": "コメント",
+    "comment_success": "コメントを送信しました。",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "comment": "コメント",
+    "submit_comment": "コメントを投稿"
+  },
+  "password": {
+    "title": "プライベートアクセス",
+    "access": "プライベートアクセス",
+    "password": "パスワード",
+    "enter": "ストアに入る",
+    "updates": "ローンチ情報",
+    "email": "メールアドレス",
+    "notify": "通知を受け取る",
+    "success": "ローンチリストに登録されました。"
   }
 }

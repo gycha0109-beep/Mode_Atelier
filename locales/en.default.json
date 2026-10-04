@@ -126,5 +126,29 @@
     "submit": "Send inquiry",
     "success_title": "Message received.",
     "success_body": "Thank you. The team will respond through the email address you provided."
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "tags": "Journal tags",
+    "all": "All stories",
+    "empty": "No stories have been published yet.",
+    "by_author": "By {{ author }}",
+    "article_navigation": "More journal stories",
+    "comments": "Comments",
+    "comment_success": "Your comment was submitted.",
+    "name": "Name",
+    "email": "Email",
+    "comment": "Comment",
+    "submit_comment": "Post comment"
+  },
+  "password": {
+    "title": "Private access",
+    "access": "Private access",
+    "password": "Password",
+    "enter": "Enter store",
+    "updates": "Launch notes",
+    "email": "Email address",
+    "notify": "Notify me",
+    "success": "Thank you. You are on the launch list."
   }
 }
