@@ -65,7 +65,12 @@
       "product_count": "{{ count }}点",
       "no_matches": "商品が見つかりません。"
     },
-    "sorting": { "title": "並び替え" }
+    "sorting": { "title": "並び替え" },
+    "list": {
+      "eyebrow": "コレクションから探す",
+      "title": "コレクション",
+      "empty": "公開中のコレクションはまだありません。"
+    }
   },
   "cart": {
     "general": {
@@ -95,5 +100,16 @@
     "email": "メールアドレス",
     "submit": "登録",
     "success": "ご登録ありがとうございます。"
+  },
+  "contact": {
+    "details_eyebrow": "お問い合わせ",
+    "details_body": "商品、配送、返品、卸売についてお問い合わせください。",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "message": "お問い合わせ内容",
+    "submit": "送信",
+    "success_title": "お問い合わせを受け付けました。",
+    "success_body": "ご入力いただいたメールアドレスへ返信いたします。"
   }
 }

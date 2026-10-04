@@ -65,7 +65,12 @@
       "product_count": "{{ count }} products",
       "no_matches": "No products found."
     },
-    "sorting": { "title": "Sort" }
+    "sorting": { "title": "Sort" },
+    "list": {
+      "eyebrow": "Shop by edit",
+      "title": "Collections",
+      "empty": "No collections are available yet."
+    }
   },
   "cart": {
     "general": {
@@ -95,5 +100,16 @@
     "email": "Email address",
     "submit": "Join",
     "success": "Thank you. You are on the list."
+  },
+  "contact": {
+    "details_eyebrow": "Client service",
+    "details_body": "Send a message for product, shipping, return or wholesale inquiries.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send inquiry",
+    "success_title": "Message received.",
+    "success_body": "Thank you. The team will respond through the email address you provided."
   }
 }

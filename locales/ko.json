@@ -65,7 +65,12 @@
       "product_count": "상품 {{ count }}개",
       "no_matches": "조건에 맞는 상품이 없습니다."
     },
-    "sorting": { "title": "정렬" }
+    "sorting": { "title": "정렬" },
+    "list": {
+      "eyebrow": "컬렉션별 쇼핑",
+      "title": "컬렉션",
+      "empty": "아직 공개된 컬렉션이 없습니다."
+    }
   },
   "cart": {
     "general": {
@@ -95,5 +100,16 @@
     "email": "이메일 주소",
     "submit": "구독하기",
     "success": "구독이 완료되었습니다."
+  },
+  "contact": {
+    "details_eyebrow": "고객 문의",
+    "details_body": "상품, 배송, 반품 또는 도매 관련 문의를 남겨주세요.",
+    "name": "이름",
+    "email": "이메일",
+    "phone": "전화번호",
+    "message": "문의 내용",
+    "submit": "문의 보내기",
+    "success_title": "문의가 접수되었습니다.",
+    "success_body": "입력하신 이메일을 통해 답변드리겠습니다."
   }
 }

@@ -1,0 +1,154 @@
+shopify-account {
+  --shopify-account-avatar-size: 30px;
+  --shopify-account-signed-in-avatar-size: 30px;
+  --shopify-account-color-accent: var(--ma-accent);
+  --shopify-account-color-background: var(--ma-bg);
+  --shopify-account-color-text: var(--ma-text);
+  --shopify-account-radius-base: 0;
+}
+
+.mobile-nav__children {
+  display: grid;
+  gap: .2rem;
+  padding: 0 0 .7rem 1rem;
+}
+
+.mobile-nav__children a {
+  color: var(--ma-muted);
+  font-size: 13px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, .65fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 7vw, 8rem);
+  align-items: start;
+}
+
+.contact-intro {
+  max-width: 26rem;
+  color: var(--ma-muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: .4rem;
+}
+
+.field label {
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--ma-bg);
+  color: var(--ma-text);
+  padding: .8rem;
+}
+
+.field input {
+  min-height: 48px;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.form-errors,
+.form-status {
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.form-status h2 {
+  font-size: 1.5rem;
+}
+
+.collection-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.collection-card__media {
+  overflow: hidden;
+  background: #e3e0d9;
+}
+
+.collection-card__media img,
+.collection-card__placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.collection-card__media--portrait {
+  aspect-ratio: 3 / 4;
+}
+
+.collection-card__media--square {
+  aspect-ratio: 1;
+}
+
+.collection-card__media--landscape {
+  aspect-ratio: 4 / 3;
+}
+
+.collection-card:hover .collection-card__media img {
+  transform: scale(1.015);
+}
+
+.collection-card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-top: .8rem;
+}
+
+.collection-card__meta h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+.collection-card__meta span {
+  color: var(--ma-muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+@media (max-width: 989px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-list {
+    grid-template-columns: 1fr;
+  }
+}

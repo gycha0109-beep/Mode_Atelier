@@ -18,7 +18,7 @@
     <div class="site-header__actions">
       <a href="{{ routes.search_url }}">{{ 'sections.header.search' | t }}</a>
       {% if shop.customer_accounts_enabled %}
-        <a href="{{ routes.account_url }}">{{ 'sections.header.account' | t }}</a>
+        <shopify-account menu="{{ section.settings.customer_account_menu }}"></shopify-account>
       {% endif %}
       <a href="{{ routes.cart_url }}">{{ 'sections.header.cart' | t }} <span aria-live="polite">({{ cart.item_count }})</span></a>
     </div>
@@ -26,7 +26,16 @@
 
   <nav id="MobileMenu" class="mobile-nav" hidden data-mobile-menu aria-label="{{ 'sections.header.mobile_navigation' | t }}">
     {% for link in linklists[section.settings.menu].links %}
-      <a href="{{ link.url }}">{{ link.title }}</a>
+      <div class="mobile-nav__item">
+        <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {% if link.links != blank %}
+          <div class="mobile-nav__children">
+            {% for child_link in link.links %}
+              <a href="{{ child_link.url }}"{% if child_link.current %} aria-current="page"{% endif %}>{{ child_link.title }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
     {% endfor %}
   </nav>
 </header>
@@ -36,6 +45,7 @@
   "name": "Header",
   "settings": [
     { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
+    { "type": "link_list", "id": "customer_account_menu", "label": "Customer account menu", "default": "customer-account-main-menu" },
     { "type": "checkbox", "id": "sticky", "label": "Sticky header", "default": true }
   ]
 }
