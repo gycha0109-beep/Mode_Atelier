@@ -25,6 +25,7 @@
 | R-021 | Social sharing metadata | social-meta-tags | 구현 |
 | R-022 | 최신 customer accounts 진입 | shopify-account component | 구현 |
 | R-023 | Contact / collection index | page.contact + list-collections | 구현 |
+| R-024 | Ajax add-to-cart + live cart count | theme.js + cart notification | 구현 |
 
 ## 완료 정의
 

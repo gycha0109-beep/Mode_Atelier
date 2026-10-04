@@ -84,6 +84,13 @@
       "taxes_shipping": "Taxes, duties and shipping are calculated according to market configuration and checkout eligibility.",
       "update": "Update bag",
       "checkout": "Checkout"
+    },
+    "notification": {
+      "adding": "Adding…",
+      "added": "Added to your bag.",
+      "error": "Unable to add this item. Please try again.",
+      "view_cart": "View bag",
+      "close": "Close cart notification"
     }
   },
   "search": {

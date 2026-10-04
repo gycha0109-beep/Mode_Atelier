@@ -83,6 +83,85 @@ if (!customElements.get('predictive-search')) {
   customElements.define('predictive-search', ModeAtelierPredictiveSearch);
 }
 
+const showCartNotification = (message, isError = false) => {
+  const notification = document.querySelector('[data-cart-notification]');
+  const messageElement = notification?.querySelector('[data-cart-notification-message]');
+  if (!notification || !messageElement) return;
+
+  messageElement.textContent = message;
+  notification.dataset.state = isError ? 'error' : 'success';
+  notification.hidden = false;
+
+  window.clearTimeout(showCartNotification.timeout);
+  showCartNotification.timeout = window.setTimeout(() => {
+    notification.hidden = true;
+  }, 5000);
+};
+
+const refreshCartCount = async () => {
+  const response = await fetch(`${window.Shopify.routes.root}cart.js`, {
+    headers: { Accept: 'application/json' }
+  });
+
+  if (!response.ok) throw new Error(`Cart refresh failed: ${response.status}`);
+
+  const cart = await response.json();
+  document.querySelectorAll('[data-cart-count]').forEach((count) => {
+    count.textContent = `(${cart.item_count})`;
+  });
+
+  return cart;
+};
+
+const enableAjaxProductForms = () => {
+  document.querySelectorAll('[data-ajax-product-form]').forEach((form) => {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const button = form.querySelector('[data-add-to-cart]');
+      const buttonText = form.querySelector('[data-add-to-cart-text]');
+      if (!button || button.disabled) return;
+
+      const originalText = buttonText?.textContent || '';
+      button.disabled = true;
+      button.setAttribute('aria-busy', 'true');
+      if (buttonText) buttonText.textContent = window.modeAtelierStrings?.adding || 'Adding…';
+
+      try {
+        const response = await fetch(`${window.Shopify.routes.root}cart/add.js`, {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form)
+        });
+
+        const payload = await response.json();
+
+        if (!response.ok) {
+          throw new Error(payload.description || payload.message || 'Unable to add item');
+        }
+
+        await refreshCartCount();
+        showCartNotification(window.modeAtelierStrings?.added || 'Added to bag.');
+      } catch (error) {
+        showCartNotification(
+          error.message || window.modeAtelierStrings?.addError || 'Unable to add this item.',
+          true
+        );
+      } finally {
+        button.removeAttribute('aria-busy');
+        const selectedOption = form.querySelector('[data-variant-select]')?.selectedOptions?.[0];
+        const available = selectedOption ? selectedOption.dataset.available === 'true' : true;
+        button.disabled = !available;
+        if (buttonText) {
+          buttonText.textContent = available
+            ? window.modeAtelierStrings?.addToCart || originalText
+            : window.modeAtelierStrings?.soldOut || 'Sold out';
+        }
+      }
+    });
+  });
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('[data-menu-toggle]');
   const menu = document.querySelector('[data-mobile-menu]');
@@ -94,6 +173,13 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.hidden = isOpen;
     });
   }
+
+  document.querySelectorAll('[data-cart-notification-close]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const notification = button.closest('[data-cart-notification]');
+      if (notification) notification.hidden = true;
+    });
+  });
 
   document.querySelectorAll('[data-product-section]').forEach((section) => {
     const select = section.querySelector('[data-variant-select]');
@@ -124,6 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  enableAjaxProductForms();
 
   document.querySelectorAll('[data-product-recommendations]').forEach((section) => {
     if (!section.dataset.url || !('IntersectionObserver' in window)) return;

@@ -33,7 +33,10 @@
     <script>
       window.modeAtelierStrings = {
         addToCart: {{ 'products.product.add_to_cart' | t | json }},
-        soldOut: {{ 'products.product.sold_out' | t | json }}
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        adding: {{ 'cart.notification.adding' | t | json }},
+        added: {{ 'cart.notification.added' | t | json }},
+        addError: {{ 'cart.notification.error' | t | json }}
       };
     </script>
     <script src="{{ 'theme.js' | asset_url }}" defer></script>
@@ -45,5 +48,6 @@
       {{ content_for_layout }}
     </main>
     {% sections 'footer-group' %}
+    {% render 'cart-notification' %}
   </body>
 </html>
