@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="page-width site-footer__grid">
+    <div>
+      <p class="wordmark">{{ shop.name | default: 'MODE ATELIER' }}</p>
+      <p class="site-footer__copy">{{ 'sections.footer.tagline' | t }}</p>
+    </div>
+
+    <nav aria-label="{{ 'sections.footer.navigation' | t }}">
+      {% for link in linklists[section.settings.menu].links %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <div>
+      <p class="eyebrow">{{ 'sections.footer.payments' | t }}</p>
+      <div class="payment-icons" aria-label="{{ 'sections.footer.payment_methods' | t }}">
+        {% for type in shop.enabled_payment_types %}
+          {{ type | payment_type_svg_tag }}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="page-width site-footer__legal">
+    <span>© {{ 'now' | date: '%Y' }} {{ shop.name }}</span>
+    <span>{{ 'sections.footer.prototype_notice' | t }}</span>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" }
+  ]
+}
+{% endschema %}

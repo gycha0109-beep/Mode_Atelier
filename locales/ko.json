@@ -1,0 +1,70 @@
+{
+  "accessibility": { "skip_to_text": "본문으로 이동" },
+  "general": {
+    "view_all": "전체 보기",
+    "pagination": { "label": "페이지 이동" }
+  },
+  "sections": {
+    "announcement": { "label": "공지" },
+    "header": {
+      "menu": "메뉴 열기",
+      "primary_navigation": "주요 메뉴",
+      "mobile_navigation": "모바일 메뉴",
+      "search": "검색",
+      "account": "계정",
+      "cart": "장바구니"
+    },
+    "footer": {
+      "tagline": "글로벌 D2C 런칭을 가정한 독립 패션 커머스 프로토타입입니다.",
+      "navigation": "하단 메뉴",
+      "payments": "결제 수단",
+      "payment_methods": "사용 가능한 결제 수단",
+      "prototype_notice": "합성 포트폴리오 프로젝트 — 실제 판매몰이 아닙니다."
+    }
+  },
+  "products": {
+    "product": {
+      "variant": "옵션",
+      "quantity": "수량",
+      "add_to_cart": "장바구니 담기",
+      "sold_out": "품절",
+      "regular_price": "정상가",
+      "shipping_returns": "배송 및 반품",
+      "shipping_returns_body": "오픈 전 시장별 배송비, 관부가세 및 반품 기간을 확정해야 합니다.",
+      "global_checkout": "글로벌 결제",
+      "global_checkout_body": "노출 가능한 결제 수단은 판매자 국가, PG 자격 및 구매자 위치에 따라 달라집니다."
+    }
+  },
+  "collections": {
+    "general": {
+      "collection": "컬렉션",
+      "product_count": "상품 {{ count }}개",
+      "no_matches": "조건에 맞는 상품이 없습니다."
+    },
+    "sorting": { "title": "정렬" }
+  },
+  "cart": {
+    "general": {
+      "eyebrow": "선택한 상품",
+      "title": "장바구니",
+      "empty": "장바구니가 비어 있습니다.",
+      "continue_shopping": "쇼핑 계속하기",
+      "quantity": "수량",
+      "remove": "삭제",
+      "subtotal": "소계",
+      "taxes_shipping": "세금, 관부가세 및 배송비는 시장 설정과 체크아웃 자격에 따라 계산됩니다.",
+      "update": "장바구니 수정",
+      "checkout": "결제하기"
+    }
+  },
+  "search": {
+    "general": {
+      "eyebrow": "찾기",
+      "title": "검색",
+      "placeholder": "상품, 페이지, 스토리 검색",
+      "submit": "검색",
+      "results_with_count": "“{{ terms }}” 검색 결과 {{ count }}건",
+      "no_results": "검색 결과가 없습니다."
+    }
+  }
+}

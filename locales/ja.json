@@ -1,0 +1,70 @@
+{
+  "accessibility": { "skip_to_text": "本文へ移動" },
+  "general": {
+    "view_all": "すべて見る",
+    "pagination": { "label": "ページネーション" }
+  },
+  "sections": {
+    "announcement": { "label": "お知らせ" },
+    "header": {
+      "menu": "メニューを開く",
+      "primary_navigation": "メインナビゲーション",
+      "mobile_navigation": "モバイルナビゲーション",
+      "search": "検索",
+      "account": "アカウント",
+      "cart": "バッグ"
+    },
+    "footer": {
+      "tagline": "グローバルD2Cローンチを想定したファッションコマースのプロトタイプです。",
+      "navigation": "フッターナビゲーション",
+      "payments": "決済方法",
+      "payment_methods": "利用可能な決済方法",
+      "prototype_notice": "合成ポートフォリオプロジェクト — 実店舗ではありません。"
+    }
+  },
+  "products": {
+    "product": {
+      "variant": "オプション",
+      "quantity": "数量",
+      "add_to_cart": "バッグに追加",
+      "sold_out": "売り切れ",
+      "regular_price": "通常価格",
+      "shipping_returns": "配送・返品",
+      "shipping_returns_body": "公開前に市場ごとの送料、関税、税金、返品期間を設定する必要があります。",
+      "global_checkout": "グローバル決済",
+      "global_checkout_body": "利用可能な決済方法は、販売者の国、決済プロバイダの資格、購入者の所在地によって異なります。"
+    }
+  },
+  "collections": {
+    "general": {
+      "collection": "コレクション",
+      "product_count": "{{ count }}点",
+      "no_matches": "商品が見つかりません。"
+    },
+    "sorting": { "title": "並び替え" }
+  },
+  "cart": {
+    "general": {
+      "eyebrow": "選択した商品",
+      "title": "ショッピングバッグ",
+      "empty": "バッグは空です。",
+      "continue_shopping": "買い物を続ける",
+      "quantity": "数量",
+      "remove": "削除",
+      "subtotal": "小計",
+      "taxes_shipping": "税金、関税、送料はマーケット設定とチェックアウト条件に基づいて計算されます。",
+      "update": "バッグを更新",
+      "checkout": "チェックアウト"
+    }
+  },
+  "search": {
+    "general": {
+      "eyebrow": "探す",
+      "title": "検索",
+      "placeholder": "商品・ページ・ストーリーを検索",
+      "submit": "検索",
+      "results_with_count": "「{{ terms }}」の検索結果 {{ count }}件",
+      "no_results": "検索結果がありません。"
+    }
+  }
+}

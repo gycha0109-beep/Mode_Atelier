@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-editorial",
+      "settings": {
+        "kicker": "AUTUMN / WINTER 26",
+        "heading": "Quiet structure. Global attitude.",
+        "text": "A synthetic global fashion storefront demonstrating a production-minded Shopify launch.",
+        "button_label": "Shop the collection"
+      }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "kicker": "CURATED NOW",
+        "heading": "New arrivals",
+        "products_to_show": 4
+      }
+    }
+  },
+  "order": ["hero", "featured"]
+}

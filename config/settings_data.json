@@ -1,0 +1,16 @@
+{
+  "current": {
+    "background_color": "#F5F3EE",
+    "text_color": "#111111",
+    "brand_accent": "#111111",
+    "muted_color": "#6E6B64"
+  },
+  "presets": {
+    "Mode Atelier": {
+      "background_color": "#F5F3EE",
+      "text_color": "#111111",
+      "brand_accent": "#111111",
+      "muted_color": "#6E6B64"
+    }
+  }
+}

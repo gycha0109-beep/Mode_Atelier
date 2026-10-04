@@ -1,0 +1,19 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Mode Atelier",
+    "theme_version": "0.1.0",
+    "theme_author": "Mode Atelier Portfolio",
+    "theme_documentation_url": "https://github.com/gycha0109-beep/Mode_Atelier",
+    "theme_support_url": "https://github.com/gycha0109-beep/Mode_Atelier/issues"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      { "type": "color", "id": "background_color", "label": "Background", "default": "#F5F3EE" },
+      { "type": "color", "id": "text_color", "label": "Text", "default": "#111111" },
+      { "type": "color", "id": "brand_accent", "label": "Accent", "default": "#111111" },
+      { "type": "color", "id": "muted_color", "label": "Muted text", "default": "#6E6B64" }
+    ]
+  }
+]
