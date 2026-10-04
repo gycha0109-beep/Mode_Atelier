@@ -1,20 +1,20 @@
 name: Theme Check
 
 on:
-  push:
-    branches:
-      - main
-      - "feat/**"
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
   checks: write
 
 concurrency:
-  group: theme-check-${{ github.ref }}
+  group: theme-check-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
