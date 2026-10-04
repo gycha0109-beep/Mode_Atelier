@@ -9,6 +9,10 @@
       "back_home": "홈으로 돌아가기"
     }
   },
+  "localization": {
+    "country": "국가 / 지역",
+    "language": "언어"
+  },
   "sections": {
     "announcement": { "label": "공지" },
     "header": {

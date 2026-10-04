@@ -9,6 +9,10 @@
       "back_home": "ホームへ戻る"
     }
   },
+  "localization": {
+    "country": "国 / 地域",
+    "language": "言語"
+  },
   "sections": {
     "announcement": { "label": "お知らせ" },
     "header": {

@@ -9,6 +9,10 @@
       "back_home": "Return home"
     }
   },
+  "localization": {
+    "country": "Country / region",
+    "language": "Language"
+  },
   "sections": {
     "announcement": { "label": "Announcement" },
     "header": {
