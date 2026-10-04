@@ -2,7 +2,12 @@
   "accessibility": { "skip_to_text": "본문으로 이동" },
   "general": {
     "view_all": "전체 보기",
-    "pagination": { "label": "페이지 이동" }
+    "pagination": { "label": "페이지 이동" },
+    "404": {
+      "title": "페이지를 찾을 수 없습니다.",
+      "subtext": "찾으시는 페이지가 이동되었거나 삭제되었습니다.",
+      "back_home": "홈으로 돌아가기"
+    }
   },
   "sections": {
     "announcement": { "label": "공지" },
@@ -66,5 +71,10 @@
       "results_with_count": "“{{ terms }}” 검색 결과 {{ count }}건",
       "no_results": "검색 결과가 없습니다."
     }
+  },
+  "newsletter": {
+    "email": "이메일 주소",
+    "submit": "구독하기",
+    "success": "구독이 완료되었습니다."
   }
 }

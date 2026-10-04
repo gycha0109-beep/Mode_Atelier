@@ -1,0 +1,7 @@
+.git/
+.github/
+docs/
+evidence/
+README.md
+*.log
+.env*

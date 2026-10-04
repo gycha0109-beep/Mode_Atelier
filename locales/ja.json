@@ -2,7 +2,12 @@
   "accessibility": { "skip_to_text": "本文へ移動" },
   "general": {
     "view_all": "すべて見る",
-    "pagination": { "label": "ページネーション" }
+    "pagination": { "label": "ページネーション" },
+    "404": {
+      "title": "ページが見つかりません。",
+      "subtext": "お探しのページは移動または削除された可能性があります。",
+      "back_home": "ホームへ戻る"
+    }
   },
   "sections": {
     "announcement": { "label": "お知らせ" },
@@ -66,5 +71,10 @@
       "results_with_count": "「{{ terms }}」の検索結果 {{ count }}件",
       "no_results": "検索結果がありません。"
     }
+  },
+  "newsletter": {
+    "email": "メールアドレス",
+    "submit": "登録",
+    "success": "ご登録ありがとうございます。"
   }
 }

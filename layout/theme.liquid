@@ -24,6 +24,12 @@
       }
     </style>
     {{ 'theme.css' | asset_url | stylesheet_tag }}
+    <script>
+      window.modeAtelierStrings = {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }}
+      };
+    </script>
     <script src="{{ 'theme.js' | asset_url }}" defer></script>
   </head>
   <body>
