@@ -21,31 +21,31 @@
                 {% when 'boolean' %}
                   <ul class="facet__list" role="list">
                     {% if filter.true_value %}
+                      {% capture true_id %}Filter-{{ filter.param_name | handleize }}-true{% endcapture %}
                       <li>
-                        <label>
-                          <input
-                            type="checkbox"
-                            name="{{ filter.true_value.param_name }}"
-                            value="{{ filter.true_value.value }}"
-                            {% if filter.true_value.active %}checked{% endif %}
-                            {% if filter.true_value.count == 0 and filter.true_value.active == false %}disabled{% endif %}
-                          >
-                          <span>{{ filter.true_value.label }} ({{ filter.true_value.count }})</span>
-                        </label>
+                        <input
+                          id="{{ true_id }}"
+                          type="checkbox"
+                          name="{{ filter.true_value.param_name }}"
+                          value="{{ filter.true_value.value }}"
+                          {% if filter.true_value.active %}checked{% endif %}
+                          {% if filter.true_value.count == 0 and filter.true_value.active == false %}disabled{% endif %}
+                        >
+                        <label for="{{ true_id }}">{{ filter.true_value.label }} ({{ filter.true_value.count }})</label>
                       </li>
                     {% endif %}
                     {% if filter.false_value %}
+                      {% capture false_id %}Filter-{{ filter.param_name | handleize }}-false{% endcapture %}
                       <li>
-                        <label>
-                          <input
-                            type="checkbox"
-                            name="{{ filter.false_value.param_name }}"
-                            value="{{ filter.false_value.value }}"
-                            {% if filter.false_value.active %}checked{% endif %}
-                            {% if filter.false_value.count == 0 and filter.false_value.active == false %}disabled{% endif %}
-                          >
-                          <span>{{ filter.false_value.label }} ({{ filter.false_value.count }})</span>
-                        </label>
+                        <input
+                          id="{{ false_id }}"
+                          type="checkbox"
+                          name="{{ filter.false_value.param_name }}"
+                          value="{{ filter.false_value.value }}"
+                          {% if filter.false_value.active %}checked{% endif %}
+                          {% if filter.false_value.count == 0 and filter.false_value.active == false %}disabled{% endif %}
+                        >
+                        <label for="{{ false_id }}">{{ filter.false_value.label }} ({{ filter.false_value.count }})</label>
                       </li>
                     {% endif %}
                   </ul>
@@ -53,55 +53,60 @@
                 {% when 'list' %}
                   <ul class="facet__list" role="list">
                     {% for value in filter.values %}
+                      {% capture value_id %}Filter-{{ filter.param_name | handleize }}-{{ forloop.index }}{% endcapture %}
                       <li>
-                        <label>
-                          <input
-                            type="checkbox"
-                            name="{{ value.param_name }}"
-                            value="{{ value.value }}"
-                            {% if value.active %}checked{% endif %}
-                            {% if value.count == 0 and value.active == false %}disabled{% endif %}
-                          >
-                          <span>{{ value.label }} ({{ value.count }})</span>
-                        </label>
+                        <input
+                          id="{{ value_id }}"
+                          type="checkbox"
+                          name="{{ value.param_name }}"
+                          value="{{ value.value }}"
+                          {% if value.active %}checked{% endif %}
+                          {% if value.count == 0 and value.active == false %}disabled{% endif %}
+                        >
+                        <label for="{{ value_id }}">{{ value.label }} ({{ value.count }})</label>
                       </li>
                     {% endfor %}
                   </ul>
 
                 {% when 'price_range' %}
+                  {% capture min_id %}Filter-{{ filter.min_value.param_name | handleize }}{% endcapture %}
+                  {% capture max_id %}Filter-{{ filter.max_value.param_name | handleize }}{% endcapture %}
                   <div class="facet__price">
-                    <label>
+                    <label for="{{ min_id }}">
                       <span>{{ 'facets.from' | t }}</span>
-                      <span class="facet__money-input">
-                        <span>{{ cart.currency.symbol }}</span>
-                        <input
-                          name="{{ filter.min_value.param_name }}"
-                          type="number"
-                          min="0"
-                          max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                          {% if filter.min_value.value %}
-                            value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
-                          {% endif %}
-                          placeholder="0"
-                        >
-                      </span>
                     </label>
-                    <label>
+                    <span class="facet__money-input">
+                      <span aria-hidden="true">{{ cart.currency.symbol }}</span>
+                      <input
+                        id="{{ min_id }}"
+                        name="{{ filter.min_value.param_name }}"
+                        type="number"
+                        min="0"
+                        max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                        {% if filter.min_value.value %}
+                          value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                        {% endif %}
+                        placeholder="0"
+                      >
+                    </span>
+
+                    <label for="{{ max_id }}">
                       <span>{{ 'facets.to' | t }}</span>
-                      <span class="facet__money-input">
-                        <span>{{ cart.currency.symbol }}</span>
-                        <input
-                          name="{{ filter.max_value.param_name }}"
-                          type="number"
-                          min="0"
-                          max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                          {% if filter.max_value.value %}
-                            value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
-                          {% endif %}
-                          placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                        >
-                      </span>
                     </label>
+                    <span class="facet__money-input">
+                      <span aria-hidden="true">{{ cart.currency.symbol }}</span>
+                      <input
+                        id="{{ max_id }}"
+                        name="{{ filter.max_value.param_name }}"
+                        type="number"
+                        min="0"
+                        max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                        {% if filter.max_value.value %}
+                          value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                        {% endif %}
+                        placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                      >
+                    </span>
                   </div>
               {% endcase %}
 
@@ -117,9 +122,9 @@
       </div>
 
       {% if sort_options %}
-        <label class="facets__sort">
+        <label class="facets__sort" for="SortBy">
           <span>{{ 'facets.sort' | t }}</span>
-          <select name="sort_by" onchange="this.form.submit()">
+          <select id="SortBy" name="sort_by" onchange="this.form.submit()">
             {% for option in sort_options %}
               <option value="{{ option.value | escape }}" {% if option.value == sort_by %}selected{% endif %}>
                 {{ option.name }}
