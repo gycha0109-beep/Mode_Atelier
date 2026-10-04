@@ -94,6 +94,14 @@
       "submit": "검색",
       "results_with_count": "“{{ terms }}” 검색 결과 {{ count }}건",
       "no_results": "검색 결과가 없습니다."
+    },
+    "predictive": {
+      "suggestions": "추천 검색어",
+      "products": "상품",
+      "collections": "컬렉션",
+      "pages": "페이지",
+      "no_results": "즉시 검색 결과가 없습니다.",
+      "search_for": "“{{ terms }}” 전체 검색"
     }
   },
   "newsletter": {

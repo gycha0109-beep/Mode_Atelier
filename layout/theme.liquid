@@ -14,6 +14,7 @@
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
+    {% render 'social-meta-tags' %}
     {% render 'structured-data' %}
     {{ content_for_header }}
     <style>

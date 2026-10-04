@@ -21,6 +21,10 @@
 | R-017 | 패션 lookbook | lookbook-grid + page.lookbook | 구현 |
 | R-018 | synthetic 상품 입력 | fixtures + catalog-seed | 구현 |
 | R-019 | 실제 상품 이미지/메타필드 입력 | development store | 다음 단계 |
+| R-020 | Predictive search | predictive-search section + Ajax API | 구현 |
+| R-021 | Social sharing metadata | social-meta-tags | 구현 |
+| R-022 | 최신 customer accounts 진입 | shopify-account component | 구현 |
+| R-023 | Contact / collection index | page.contact + list-collections | 구현 |
 
 ## 완료 정의
 

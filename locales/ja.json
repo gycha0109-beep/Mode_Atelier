@@ -94,6 +94,14 @@
       "submit": "検索",
       "results_with_count": "「{{ terms }}」の検索結果 {{ count }}件",
       "no_results": "検索結果がありません。"
+    },
+    "predictive": {
+      "suggestions": "検索候補",
+      "products": "商品",
+      "collections": "コレクション",
+      "pages": "ページ",
+      "no_results": "候補が見つかりません。",
+      "search_for": "「{{ terms }}」を検索"
     }
   },
   "newsletter": {

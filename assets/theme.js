@@ -1,5 +1,88 @@
 document.documentElement.classList.remove('no-js');
 
+class ModeAtelierPredictiveSearch extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('[data-predictive-search-input]');
+    this.results = this.querySelector('[data-predictive-search-results]');
+    this.endpoint = this.dataset.url;
+    this.abortController = null;
+    this.debounceTimer = null;
+
+    if (!this.input || !this.results || !this.endpoint) return;
+
+    this.input.addEventListener('input', () => this.scheduleSearch());
+    this.input.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') this.close();
+    });
+    this.addEventListener('focusout', (event) => {
+      if (!this.contains(event.relatedTarget)) this.close();
+    });
+  }
+
+  scheduleSearch() {
+    window.clearTimeout(this.debounceTimer);
+    this.debounceTimer = window.setTimeout(() => this.search(), 250);
+  }
+
+  async search() {
+    const term = this.input.value.trim();
+
+    if (!term) {
+      this.close();
+      return;
+    }
+
+    this.abortController?.abort();
+    this.abortController = new AbortController();
+
+    const params = new URLSearchParams({
+      q: term,
+      'resources[type]': 'query,product,collection,page',
+      'resources[limit]': '6',
+      'resources[options][unavailable_products]': 'last',
+      section_id: 'predictive-search'
+    });
+
+    try {
+      const response = await fetch(`${this.endpoint}?${params.toString()}`, {
+        signal: this.abortController.signal
+      });
+
+      if (!response.ok) throw new Error(`Predictive search failed: ${response.status}`);
+
+      const text = await response.text();
+      const doc = new DOMParser().parseFromString(text, 'text/html');
+      const section = doc.querySelector('#shopify-section-predictive-search');
+
+      if (!section) {
+        this.close();
+        return;
+      }
+
+      this.results.innerHTML = section.innerHTML;
+      this.open();
+    } catch (error) {
+      if (error.name !== 'AbortError') this.close();
+    }
+  }
+
+  open() {
+    this.results.hidden = false;
+    this.input.setAttribute('aria-expanded', 'true');
+  }
+
+  close() {
+    this.results.hidden = true;
+    this.results.innerHTML = '';
+    this.input.setAttribute('aria-expanded', 'false');
+  }
+}
+
+if (!customElements.get('predictive-search')) {
+  customElements.define('predictive-search', ModeAtelierPredictiveSearch);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('[data-menu-toggle]');
   const menu = document.querySelector('[data-mobile-menu]');

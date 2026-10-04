@@ -4,12 +4,29 @@
     <h1>{{ 'search.general.title' | t }}</h1>
   </header>
 
-  <form class="search-form" action="{{ routes.search_url }}" method="get" role="search">
-    <label class="visually-hidden" for="SearchInput">{{ 'search.general.placeholder' | t }}</label>
-    <input id="SearchInput" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'search.general.placeholder' | t }}">
-    <input type="hidden" name="options[prefix]" value="last">
-    <button class="button button--dark" type="submit">{{ 'search.general.submit' | t }}</button>
-  </form>
+  <predictive-search data-url="{{ routes.predictive_search_url }}">
+    <form class="search-form predictive-search-form" action="{{ routes.search_url }}" method="get" role="search">
+      <label class="visually-hidden" for="SearchInput">{{ 'search.general.placeholder' | t }}</label>
+      <input
+        id="SearchInput"
+        type="search"
+        name="q"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'search.general.placeholder' | t }}"
+        role="combobox"
+        aria-expanded="false"
+        aria-owns="predictive-search-results"
+        aria-controls="predictive-search-results"
+        aria-haspopup="listbox"
+        aria-autocomplete="list"
+        autocomplete="off"
+        data-predictive-search-input
+      >
+      <input type="hidden" name="options[prefix]" value="last">
+      <button class="button button--dark" type="submit">{{ 'search.general.submit' | t }}</button>
+      <div id="predictive-search" class="predictive-search" tabindex="-1" hidden data-predictive-search-results></div>
+    </form>
+  </predictive-search>
 
   {% if search.performed %}
     <p class="search-summary">{{ 'search.general.results_with_count' | t: count: search.results_count, terms: search.terms }}</p>

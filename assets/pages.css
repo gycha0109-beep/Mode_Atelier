@@ -133,6 +133,101 @@ shopify-account {
   white-space: nowrap;
 }
 
+.predictive-search-form {
+  position: relative;
+}
+
+.predictive-search {
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  right: 0;
+  top: calc(100% + .25rem);
+  background: var(--ma-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .1);
+}
+
+.predictive-search__panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.predictive-search__group {
+  padding: 1rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.predictive-search__heading {
+  margin-bottom: .65rem;
+  color: var(--ma-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.predictive-search ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.predictive-search li + li {
+  margin-top: .45rem;
+}
+
+.predictive-search a {
+  display: block;
+}
+
+.predictive-search__products {
+  display: grid;
+  gap: .55rem;
+}
+
+.predictive-search__product {
+  display: grid !important;
+  grid-template-columns: 64px 1fr;
+  gap: .75rem;
+  align-items: center;
+}
+
+.predictive-search__image {
+  width: 64px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #e3e0d9;
+}
+
+.predictive-search__image img,
+.predictive-search__image svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.predictive-search__product small {
+  display: block;
+  margin-top: .2rem;
+  color: var(--ma-muted);
+}
+
+.predictive-search__empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 1rem;
+}
+
+.predictive-search__submit {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @media (max-width: 989px) {
   .contact-layout {
     grid-template-columns: 1fr;
@@ -150,5 +245,13 @@ shopify-account {
 
   .collection-list {
     grid-template-columns: 1fr;
+  }
+
+  .predictive-search__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .predictive-search__group {
+    border-right: 0;
   }
 }
