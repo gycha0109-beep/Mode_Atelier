@@ -1,0 +1,40 @@
+.footer-localization {
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.localization-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.localization-form {
+  display: grid;
+  gap: .35rem;
+  min-width: 220px;
+}
+
+.localization-form label {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ma-muted);
+}
+
+.localization-form select {
+  width: 100%;
+  background: transparent;
+}
+
+@media (max-width: 640px) {
+  .localization-selectors {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .localization-form {
+    min-width: 0;
+  }
+}

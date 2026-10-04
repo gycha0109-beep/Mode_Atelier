@@ -1,4 +1,10 @@
 <footer class="site-footer">
+  {% if localization.available_countries.size > 1 or localization.available_languages.size > 1 %}
+    <div class="page-width footer-localization">
+      {% render 'localization-selectors' %}
+    </div>
+  {% endif %}
+
   <div class="page-width site-footer__grid">
     <div>
       <p class="wordmark">{{ shop.name | default: 'MODE ATELIER' }}</p>
