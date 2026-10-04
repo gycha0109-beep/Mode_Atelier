@@ -13,6 +13,14 @@
     "country": "국가 / 지역",
     "language": "언어"
   },
+  "facets": {
+    "from": "최저",
+    "to": "최고",
+    "reset": "초기화",
+    "apply": "적용",
+    "sort": "정렬",
+    "clear_all": "전체 해제"
+  },
   "sections": {
     "announcement": { "label": "공지" },
     "header": {
@@ -38,10 +46,17 @@
       "add_to_cart": "장바구니 담기",
       "sold_out": "품절",
       "regular_price": "정상가",
+      "fit_note": "핏",
+      "materials": "소재",
+      "care": "관리 방법",
+      "size_guide": "사이즈 가이드",
       "shipping_returns": "배송 및 반품",
       "shipping_returns_body": "오픈 전 시장별 배송비, 관부가세 및 반품 기간을 확정해야 합니다.",
       "global_checkout": "글로벌 결제",
       "global_checkout_body": "노출 가능한 결제 수단은 판매자 국가, PG 자격 및 구매자 위치에 따라 달라집니다."
+    },
+    "recommendations": {
+      "eyebrow": "함께 둘러보기"
     }
   },
   "collections": {

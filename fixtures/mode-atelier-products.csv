@@ -1,0 +1,15 @@
+Title,URL handle,Description,Vendor,Type,Tags,Published on online store,Status,SKU,Option1 name,Option1 value,Price,Inventory tracker,Inventory quantity,Continue selling when out of stock,Weight value (grams),Weight unit for display,Requires shipping,Charge tax,Collection
+Architectural Wool Jacket,architectural-wool-jacket,"Double-faced wool jacket with a restrained shoulder and cropped architectural line.",Mode Atelier,Outerwear,"AW26,outerwear,charcoal",true,active,MA-AW26-JK01-S,Size,S,328000,shopify,8,deny,920,g,true,true,New Arrivals
+,architectural-wool-jacket,,,,,,,MA-AW26-JK01-M,Size,M,328000,shopify,12,deny,940,g,true,true,
+,architectural-wool-jacket,,,,,,,MA-AW26-JK01-L,Size,L,328000,shopify,7,deny,960,g,true,true,
+Transit Nylon Shell,transit-nylon-shell,"Lightweight technical shell cut for layering between seasons.",Mode Atelier,Outerwear,"AW26,outerwear,black,technical",true,active,MA-AW26-JK02-S,Size,S,248000,shopify,10,deny,540,g,true,true,New Arrivals
+,transit-nylon-shell,,,,,,,MA-AW26-JK02-M,Size,M,248000,shopify,14,deny,560,g,true,true,
+,transit-nylon-shell,,,,,,,MA-AW26-JK02-L,Size,L,248000,shopify,9,deny,580,g,true,true,
+Soft Structure Knit,soft-structure-knit,"Compact knit with a soft hand and structured rib finish.",Mode Atelier,Knitwear,"AW26,knitwear,stone",true,active,MA-AW26-KN01-S,Size,S,168000,shopify,11,deny,430,g,true,true,New Arrivals
+,soft-structure-knit,,,,,,,MA-AW26-KN01-M,Size,M,168000,shopify,15,deny,450,g,true,true,
+,soft-structure-knit,,,,,,,MA-AW26-KN01-L,Size,L,168000,shopify,8,deny,470,g,true,true,
+Column Wide Trouser,column-wide-trouser,"Full-length wide trouser with a clean front and fluid column silhouette.",Mode Atelier,Bottoms,"AW26,bottoms,ink",true,active,MA-AW26-PT01-S,Size,S,188000,shopify,9,deny,610,g,true,true,New Arrivals
+,column-wide-trouser,,,,,,,MA-AW26-PT01-M,Size,M,188000,shopify,13,deny,630,g,true,true,
+,column-wide-trouser,,,,,,,MA-AW26-PT01-L,Size,L,188000,shopify,7,deny,650,g,true,true,
+Atelier Leather Tote,atelier-leather-tote,"Structured leather tote sized for daily carry with minimal external branding.",Mode Atelier,Accessories,"AW26,accessories,black,leather",true,active,MA-AW26-BG01,Size,One Size,298000,shopify,16,deny,780,g,true,true,New Arrivals
+Folded Crescent Bag,folded-crescent-bag,"Soft crescent shoulder bag with folded side construction.",Mode Atelier,Accessories,"AW26,accessories,ash",true,active,MA-AW26-BG02,Size,One Size,218000,shopify,18,deny,520,g,true,true,New Arrivals

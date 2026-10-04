@@ -5,25 +5,27 @@
     {% if collection.description != blank %}<div class="rte">{{ collection.description }}</div>{% endif %}
   </header>
 
-  {% paginate collection.products by section.settings.products_per_page %}
-    <div class="collection-toolbar">
-      <span>{{ 'collections.general.product_count' | t: count: collection.products_count }}</span>
-      <form method="get">
-        <label for="SortBy">{{ 'collections.sorting.title' | t }}</label>
-        <select id="SortBy" name="sort_by" onchange="this.form.submit()">
-          {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
-          {% for option in collection.sort_options %}
-            <option value="{{ option.value | escape }}" {% if option.value == sort_by %}selected{% endif %}>{{ option.name }}</option>
-          {% endfor %}
-        </select>
-      </form>
-    </div>
+  <div class="collection-meta">
+    <span>{{ 'collections.general.product_count' | t: count: collection.products_count }}</span>
+  </div>
 
-    <div class="product-grid">
+  {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+  {% render 'facets',
+    results: collection,
+    sort_options: collection.sort_options,
+    sort_by: sort_by,
+    clear_url: collection.url
+  %}
+
+  {% paginate collection.products by section.settings.products_per_page %}
+    <div class="product-grid product-grid--collection">
       {% for product in collection.products %}
         {% render 'product-card', product: product %}
       {% else %}
-        <p>{{ 'collections.general.no_matches' | t }}</p>
+        <div class="collection-empty">
+          <p>{{ 'collections.general.no_matches' | t }}</p>
+          <a class="text-link" href="{{ collection.url }}">{{ 'facets.clear_all' | t }}</a>
+        </div>
       {% endfor %}
     </div>
 

@@ -13,6 +13,14 @@
     "country": "国 / 地域",
     "language": "言語"
   },
+  "facets": {
+    "from": "最低",
+    "to": "最高",
+    "reset": "リセット",
+    "apply": "適用",
+    "sort": "並び替え",
+    "clear_all": "すべて解除"
+  },
   "sections": {
     "announcement": { "label": "お知らせ" },
     "header": {
@@ -38,10 +46,17 @@
       "add_to_cart": "バッグに追加",
       "sold_out": "売り切れ",
       "regular_price": "通常価格",
+      "fit_note": "フィット",
+      "materials": "素材",
+      "care": "ケア",
+      "size_guide": "サイズガイド",
       "shipping_returns": "配送・返品",
       "shipping_returns_body": "公開前に市場ごとの送料、関税、税金、返品期間を設定する必要があります。",
       "global_checkout": "グローバル決済",
       "global_checkout_body": "利用可能な決済方法は、販売者の国、決済プロバイダの資格、購入者の所在地によって異なります。"
+    },
+    "recommendations": {
+      "eyebrow": "さらに見る"
     }
   },
   "collections": {

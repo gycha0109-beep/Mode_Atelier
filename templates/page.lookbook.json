@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "lookbook": {
+      "type": "lookbook-grid",
+      "blocks": {
+        "look1": {
+          "type": "image",
+          "settings": {
+            "ratio": "portrait",
+            "caption": "Look 01 / Seoul"
+          }
+        },
+        "look2": {
+          "type": "image",
+          "settings": {
+            "ratio": "landscape",
+            "caption": "Look 02 / In transit"
+          }
+        },
+        "look3": {
+          "type": "image",
+          "settings": {
+            "ratio": "portrait",
+            "caption": "Look 03 / After dark"
+          }
+        }
+      },
+      "block_order": ["look1", "look2", "look3"],
+      "settings": {
+        "kicker": "EDITORIAL 01",
+        "heading": "Between concrete and quiet.",
+        "text": "<p>A modular campaign grid for seasonal imagery, styling stories and collection narratives.</p>"
+      }
+    }
+  },
+  "order": ["main", "lookbook"]
+}

@@ -13,6 +13,14 @@
     "country": "Country / region",
     "language": "Language"
   },
+  "facets": {
+    "from": "From",
+    "to": "To",
+    "reset": "Reset",
+    "apply": "Apply",
+    "sort": "Sort",
+    "clear_all": "Clear all"
+  },
   "sections": {
     "announcement": { "label": "Announcement" },
     "header": {
@@ -38,10 +46,17 @@
       "add_to_cart": "Add to bag",
       "sold_out": "Sold out",
       "regular_price": "Regular price",
+      "fit_note": "Fit",
+      "materials": "Materials",
+      "care": "Care",
+      "size_guide": "Size guide",
       "shipping_returns": "Shipping & returns",
       "shipping_returns_body": "Shipping rates, duties, taxes and return windows must be configured per market before launch.",
       "global_checkout": "Global checkout",
       "global_checkout_body": "Available payment methods depend on merchant country, payment provider eligibility and buyer location."
+    },
+    "recommendations": {
+      "eyebrow": "Continue exploring"
     }
   },
   "collections": {

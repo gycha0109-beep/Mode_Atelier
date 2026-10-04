@@ -1,5 +1,5 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
-<section class="product page-width" data-product-section>
+<section class="product page-width" data-product-section data-product-url="{{ product.url }}">
   <div class="product__gallery">
     {% for media in product.media %}
       <div class="product__media">
@@ -11,16 +11,21 @@
   </div>
 
   <div class="product__info">
-    {% if product.vendor != blank %}<p class="eyebrow">{{ product.vendor }}</p>{% endif %}
+    {% if section.settings.show_vendor and product.vendor != blank %}<p class="eyebrow">{{ product.vendor }}</p>{% endif %}
     <h1>{{ product.title }}</h1>
-    <div class="product__price" aria-live="polite">{{ current_variant.price | money }}</div>
+    <div class="product__price" aria-live="polite" data-product-price>{{ current_variant.price | money }}</div>
 
     {% form 'product', product, id: 'ModeAtelierProductForm', class: 'product-form' %}
       {% unless product.has_only_default_variant %}
         <label for="VariantSelect-{{ section.id }}">{{ 'products.product.variant' | t }}</label>
         <select id="VariantSelect-{{ section.id }}" name="id" data-variant-select>
           {% for variant in product.variants %}
-            <option value="{{ variant.id }}" data-available="{{ variant.available }}" {% if variant == current_variant %}selected{% endif %}>
+            <option
+              value="{{ variant.id }}"
+              data-available="{{ variant.available }}"
+              data-price="{{ variant.price | money | escape }}"
+              {% if variant == current_variant %}selected{% endif %}
+            >
               {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} — {{ 'products.product.sold_out' | t }}{% endunless %}
             </option>
           {% endfor %}
@@ -42,10 +47,39 @@
 
     <div class="product__description rte">{{ product.description }}</div>
 
+    {% if product.metafields.custom.fit_note.value != blank %}
+      <details>
+        <summary>{{ 'products.product.fit_note' | t }}</summary>
+        <p>{{ product.metafields.custom.fit_note.value }}</p>
+      </details>
+    {% endif %}
+
+    {% if product.metafields.custom.materials.value != blank %}
+      <details>
+        <summary>{{ 'products.product.materials' | t }}</summary>
+        <div class="rte">{{ product.metafields.custom.materials.value | newline_to_br }}</div>
+      </details>
+    {% endif %}
+
+    {% if product.metafields.custom.care.value != blank %}
+      <details>
+        <summary>{{ 'products.product.care' | t }}</summary>
+        <div class="rte">{{ product.metafields.custom.care.value | newline_to_br }}</div>
+      </details>
+    {% endif %}
+
+    {% if section.settings.size_guide_page != blank %}
+      <details>
+        <summary>{{ 'products.product.size_guide' | t }}</summary>
+        <div class="rte">{{ section.settings.size_guide_page.content }}</div>
+      </details>
+    {% endif %}
+
     <details>
       <summary>{{ 'products.product.shipping_returns' | t }}</summary>
       <p>{{ 'products.product.shipping_returns_body' | t }}</p>
     </details>
+
     <details>
       <summary>{{ 'products.product.global_checkout' | t }}</summary>
       <p>{{ 'products.product.global_checkout_body' | t }}</p>
@@ -56,6 +90,9 @@
 {% schema %}
 {
   "name": "Main product",
-  "settings": []
+  "settings": [
+    { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": true },
+    { "type": "page", "id": "size_guide_page", "label": "Size guide page" }
+  ]
 }
 {% endschema %}
