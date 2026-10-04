@@ -31,3 +31,6 @@ jobs:
           theme_root: "."
           token: ${{ github.token }}
           base: main
+
+      - name: Locale parity
+        run: node scripts/check-locales.mjs
