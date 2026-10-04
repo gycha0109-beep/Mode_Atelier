@@ -3,14 +3,20 @@
     "background_color": "#F5F3EE",
     "text_color": "#111111",
     "brand_accent": "#111111",
-    "muted_color": "#6E6B64"
+    "muted_color": "#6E6B64",
+    "page_width": 1480,
+    "button_radius": 0,
+    "media_radius": 0
   },
   "presets": {
     "Mode Atelier": {
       "background_color": "#F5F3EE",
       "text_color": "#111111",
       "brand_accent": "#111111",
-      "muted_color": "#6E6B64"
+      "muted_color": "#6E6B64",
+      "page_width": 1480,
+      "button_radius": 0,
+      "media_radius": 0
     }
   }
 }

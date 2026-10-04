@@ -1,0 +1,48 @@
+<section class="content-accordion page-width">
+  <header class="content-accordion__header">
+    {% if section.settings.kicker != blank %}<p class="eyebrow">{{ section.settings.kicker }}</p>{% endif %}
+    <h2>{{ section.settings.heading }}</h2>
+    {% if section.settings.text != blank %}<div class="rte">{{ section.settings.text }}</div>{% endif %}
+  </header>
+
+  <div class="content-accordion__items">
+    {% for block in section.blocks %}
+      <details class="content-accordion__item" {{ block.shopify_attributes }}>
+        <summary>{{ block.settings.question }}</summary>
+        <div class="rte content-accordion__answer">{{ block.settings.answer }}</div>
+      </details>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Content accordion",
+  "max_blocks": 12,
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "CLIENT SERVICE" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Frequently asked questions" },
+    { "type": "richtext", "id": "text", "label": "Intro" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Accordion item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "How long does shipping take?" },
+        { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Shipping estimates should be configured per market before launch.</p>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content accordion",
+      "blocks": [
+        { "type": "item", "settings": { "question": "How long does shipping take?", "answer": "<p>Shipping estimates should be configured per market before launch.</p>" } },
+        { "type": "item", "settings": { "question": "Can I return an item?", "answer": "<p>Return windows and conditions should match the merchant's final policy.</p>" } },
+        { "type": "item", "settings": { "question": "Which payment methods are available?", "answer": "<p>Available methods depend on the buyer market and the merchant's approved payment providers.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -4,7 +4,7 @@ shopify-account {
   --shopify-account-color-accent: var(--ma-accent);
   --shopify-account-color-background: var(--ma-bg);
   --shopify-account-color-text: var(--ma-text);
-  --shopify-account-radius-base: 0;
+  --shopify-account-radius-base: var(--button-radius);
 }
 
 .mobile-nav__children {
@@ -56,6 +56,7 @@ shopify-account {
 .field textarea {
   width: 100%;
   border: 1px solid var(--border);
+  border-radius: var(--button-radius);
   background: var(--ma-bg);
   color: var(--ma-text);
   padding: .8rem;
@@ -88,6 +89,7 @@ shopify-account {
 .collection-card__media {
   overflow: hidden;
   background: #e3e0d9;
+  border-radius: var(--media-radius);
 }
 
 .collection-card__media img,
@@ -145,7 +147,9 @@ shopify-account {
   top: calc(100% + .25rem);
   background: var(--ma-bg);
   border: 1px solid var(--border);
+  border-radius: var(--button-radius);
   box-shadow: 0 20px 60px rgba(0, 0, 0, .1);
+  overflow: hidden;
 }
 
 .predictive-search__panel {
@@ -198,6 +202,7 @@ shopify-account {
   aspect-ratio: 3 / 4;
   overflow: hidden;
   background: #e3e0d9;
+  border-radius: var(--media-radius);
 }
 
 .predictive-search__image img,
@@ -228,6 +233,30 @@ shopify-account {
   text-underline-offset: 4px;
 }
 
+.content-accordion {
+  display: grid;
+  grid-template-columns: minmax(240px, .7fr) minmax(0, 1.3fr);
+  gap: clamp(2rem, 8vw, 9rem);
+  padding-block: var(--space-xl);
+}
+
+.content-accordion__header {
+  max-width: 30rem;
+}
+
+.content-accordion__header h2 {
+  font-size: clamp(2rem, 3.5vw, 4rem);
+}
+
+.content-accordion__item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.content-accordion__answer {
+  padding: .5rem 0 1rem;
+  color: var(--ma-muted);
+}
+
 @media (max-width: 989px) {
   .contact-layout {
     grid-template-columns: 1fr;
@@ -235,6 +264,10 @@ shopify-account {
 
   .collection-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .content-accordion {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -253,5 +286,9 @@ shopify-account {
 
   .predictive-search__group {
     border-right: 0;
+  }
+
+  .content-accordion {
+    padding-block: 4rem;
   }
 }

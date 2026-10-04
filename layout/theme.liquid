@@ -17,19 +17,22 @@
     {% render 'social-meta-tags' %}
     {% render 'structured-data' %}
     {{ content_for_header }}
-    <style>
-      :root {
-        --ma-bg: {{ settings.background_color }};
-        --ma-text: {{ settings.text_color }};
-        --ma-accent: {{ settings.brand_accent }};
-        --ma-muted: {{ settings.muted_color }};
-      }
-    </style>
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'commerce.css' | asset_url | stylesheet_tag }}
     {{ 'pages.css' | asset_url | stylesheet_tag }}
     {{ 'localization.css' | asset_url | stylesheet_tag }}
     {{ 'a11y.css' | asset_url | stylesheet_tag }}
+    <style>
+      :root {
+        --page-width: {{ settings.page_width }}px;
+        --ma-bg: {{ settings.background_color }};
+        --ma-text: {{ settings.text_color }};
+        --ma-accent: {{ settings.brand_accent }};
+        --ma-muted: {{ settings.muted_color }};
+        --button-radius: {{ settings.button_radius }}px;
+        --media-radius: {{ settings.media_radius }}px;
+      }
+    </style>
     <script>
       window.modeAtelierStrings = {
         addToCart: {{ 'products.product.add_to_cart' | t | json }},
