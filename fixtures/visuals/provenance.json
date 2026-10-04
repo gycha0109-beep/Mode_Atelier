@@ -1,0 +1,110 @@
+[
+  {
+    "name": "hero-editorial",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide homepage campaign photograph, landscape 1536x1024. Fictional contemporary Korean global fashion label MODE ATELIER AW26. Two synthetic adult East Asian fashion models, woman and man, in restrained charcoal cropped wool tailoring and fluid black wide trousers walking through a brutalist concrete arcade in Seoul. Quiet natural daylight, tactile grain, fashion magazine art direction, off-white black graphite palette, large architectural negative space at left for HTML copy, models mostly in right half. Clothes unbranded, no logos, no text, no watermark. Entire frame full-bleed photographic image, not a web mockup.",
+    "file": "fixtures/visuals/hero-editorial.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-cc4221c1-0853-4ede-90e2-048031394612.png",
+    "sha256": "94893abef8d923b9af17c9e95013c89206b4bdb5c54208dbbbe532e3554f0470",
+    "bytes": 215262,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "architectural-wool-jacket",
+    "prompt": "Use case: product-mockup. Asset type: premium fashion ecommerce product image portrait. One original unbranded charcoal double-faced wool jacket, cropped architectural line, restrained shoulder, notch collar, two buttons, minimal pockets. Front three-quarter ghost-mannequin product photography with convincing fabric weight and wool texture, all garment edges visible and generous margins. Warm off-white seamless background, soft diffuse studio daylight and delicate shadow. Fictional MODE ATELIER catalog; no mannequin body, no model, no accessories, no letters, no logo, no watermark.",
+    "file": "fixtures/visuals/architectural-wool-jacket.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-41658f2a-8b09-4f54-976a-c55e31ed7acd.png",
+    "sha256": "7f135169a9bcc8afe03407cdf45c7d6c521a280432b11e7ec542e8e551f91bf7",
+    "bytes": 213960,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "transit-nylon-shell",
+    "prompt": "Use case: product-mockup. Asset type: premium fashion ecommerce product photograph portrait. One original unbranded matte black technical nylon shell jacket with high stand collar, zipper, clean concealed pockets and slight sculptural volume. Ghost-mannequin front three-quarter shot, realistic nylon texture and seams, full garment visible with generous margin on warm off-white seamless backdrop. Soft studio daylight and subtle shadows. Minimal Korean contemporary luxury street fashion. No model, no mannequin body, no text, no brand logo, no watermark.",
+    "file": "fixtures/visuals/transit-nylon-shell.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-ee50ad84-7856-43a0-af6b-8a2b7ed02b4e.png",
+    "sha256": "61892bff5ffb570608b9d2af1bebd206a1e5c19b60cc695506cfa575e92bd68b",
+    "bytes": 101803,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "soft-structure-knit",
+    "prompt": "Use case: product-mockup. Asset type: fashion ecommerce product photograph portrait. One original unbranded warm stone-beige compact rib knit crewneck sweater, soft hand, structured rib hems, subtly dropped shoulder and clean elongated proportions. Ghost-mannequin front three-quarter product shot, full garment visible with generous margins, knit stitches crisp and natural. Warm off-white seamless backdrop, soft diffuse daylight, delicate shadow. No human, no mannequin body, no accessories, no text, no logos, no watermark.",
+    "file": "fixtures/visuals/soft-structure-knit.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-65801ea3-9d92-4931-94a8-41ece45ebdb3.png",
+    "sha256": "65e2898e0005005ecfbbd067c8219ad63add4fd068a89be9196ac25f80bc546b",
+    "bytes": 250710,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "column-wide-trouser",
+    "prompt": "Use case: product-mockup. Asset type: fashion ecommerce product image portrait. One original unbranded ink-black full-length wide-leg tailored trouser, clean front pleats, fluid column silhouette and subtle woven texture. Ghost-mannequin product photography front three-quarter view, complete waistband and both hems visible with generous margin. Warm off-white seamless backdrop, diffuse studio daylight, quiet luxury editorial styling. No human, no shoes, no accessories, no text, no logos, no watermark.",
+    "file": "fixtures/visuals/column-wide-trouser.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-5b0b7d7c-31bd-411b-8338-17f153f590a2.png",
+    "sha256": "2a6566aa06c6c9a23a09ee348530fbd17d1d73c3a1c41c9f31545ff20cb4dff9",
+    "bytes": 86601,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "atelier-leather-tote",
+    "prompt": "Use case: product-mockup. Asset type: premium accessories ecommerce photograph portrait. One original minimalist black leather tote bag with tall rectangular soft structure, generous shoulder handles, understated stitched seams, no metallic branding. Three-quarter product view complete bag visible with generous margins on warm off-white seamless backdrop. Tactile grained leather, soft diffuse studio light and believable grounding shadow. No extra objects, no text, no logos, no watermark.",
+    "file": "fixtures/visuals/atelier-leather-tote.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-9c44ef54-674a-4bca-adbe-87188b2b0229.png",
+    "sha256": "4da178d46cc07ccc1664491addbc394914eb5b9aec6db8312bd840ab2bef6475",
+    "bytes": 175897,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "folded-crescent-bag",
+    "prompt": "Use case: product-mockup. Asset type: premium accessories ecommerce photograph portrait. One original ash-gray supple leather crescent shoulder bag, folded sculptural silhouette, one wide integrated curved strap, minimal hardware, realistic leather creases. Three-quarter front product photograph with complete strap and bag in frame and generous margins. Warm off-white seamless backdrop, soft diffuse daylight and delicate grounding shadow. No extra objects, no text, no logos, no watermark.",
+    "file": "fixtures/visuals/folded-crescent-bag.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-f3c04b5e-0ef3-404a-8d45-adf0cb502b46.png",
+    "sha256": "e3d4bf287d5d9825542aede28918ed57def3020a95459d1253f39fd14fd09026",
+    "bytes": 132809,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "editorial-transit",
+    "prompt": "Use case: photorealistic-natural. Asset type: portrait fashion lookbook photograph. Fictional Korean global fashion label MODE ATELIER. Synthetic adult East Asian woman wearing an unbranded matte black nylon shell and stone-beige knit over ink wide trousers, carrying sculptural ash crescent bag, standing at a quiet modern concrete transit hall with tall windows. Natural overcast light, magazine photography, restrained pose and real material texture, off-white charcoal palette. Complete outfit framing. No text, no logos, no watermark.",
+    "file": "fixtures/visuals/editorial-transit.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-fd3c3934-c2cf-4b79-be1d-1927ee92eed1.png",
+    "sha256": "93169e6b3eb1df6d1808219daa138b105924a7b3217593ac1cd3342088eab9e3",
+    "bytes": 182613,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  },
+  {
+    "name": "editorial-material",
+    "prompt": "Use case: photorealistic-natural. Asset type: landscape atelier brand-story image. Quiet detail photograph of charcoal wool jacket fabric and warm stone rib knit laid on a sculptural black chair beside an off-white atelier wall and concrete floor. Original unbranded garments, crisp wool and knit textures, softly raking window light, contemporary Korean fashion magazine art direction, restrained material study. No people, no labels, no text, no logos, no watermark.",
+    "file": "fixtures/visuals/editorial-material.jpg",
+    "generator": "OpenAI imagegen",
+    "created": "2026-10-04",
+    "synthetic": true,
+    "source_original": "exec-a926f305-93a0-4d40-bee5-0e5312824c06.png",
+    "sha256": "a4cdf5fb3a7daeaa32462794dbbb0213450e6f9a9376a7bcd7507035da30e520",
+    "bytes": 233208,
+    "processing": "JPEG quality 85; no content editing; original PNG preserved outside repository"
+  }
+]

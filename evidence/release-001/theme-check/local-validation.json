@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-04",
+  "baselineCommit": "697d4768083efe9eb1449b5412aaec335cba1a5d",
+  "testedScope": "Working tree changes prepared for the next foundation commit; runtime commerce QA pending",
+  "themeCheck": {
+    "command": "shopify theme check --output json",
+    "exitCode": 0,
+    "result": []
+  },
+  "localeParity": {
+    "command": "node scripts/check-locales.mjs",
+    "exitCode": 0,
+    "result": "Locale parity PASS: en.default.json -> ko.json, ja.json"
+  },
+  "catalog": {
+    "products": 6,
+    "variants": 14,
+    "uniqueSkus": 14,
+    "metafields": 4,
+    "localStructure": "PASS",
+    "adminImport": "NOT_TESTED"
+  },
+  "themePush": {
+    "command": "shopify theme push --theme 188330770750 --store mode-atelier-fluhoiwk.myshopify.com --strict --json",
+    "exitCode": 0,
+    "id": 188330770750,
+    "role": "unpublished",
+    "previewUrl": "https://mode-atelier-fluhoiwk.myshopify.com?preview_theme_id=188330770750"
+  },
+  "ci": "Pending next commit"
+}

@@ -1,0 +1,38 @@
+{
+  "architectural-wool-jacket": {
+    "materials": "Shell: 90% wool, 10% nylon.\nLining: 100% cupro.",
+    "care": "Professional dry clean only. Store on a broad hanger.",
+    "fit_note": "Relaxed shoulder. Cropped length. Choose your usual size.",
+    "model_info": "Styling reference: size M. See the size guide for garment measurements."
+  },
+  "transit-nylon-shell": {
+    "materials": "Shell: 100% recycled nylon.\nLining: 100% polyester.",
+    "care": "Cold gentle wash. Hang dry. Do not tumble dry.",
+    "fit_note": "Easy fit with room for a knit layer. Adjustable hem.",
+    "model_info": "Styling reference: size M. See the size guide for garment measurements."
+  },
+  "soft-structure-knit": {
+    "materials": "70% merino wool, 30% cotton.",
+    "care": "Cold hand wash. Reshape and dry flat.",
+    "fit_note": "Regular fit with a softly dropped shoulder.",
+    "model_info": "Styling reference: size M. See the size guide for garment measurements."
+  },
+  "column-wide-trouser": {
+    "materials": "Shell: 60% wool, 40% polyester.\nPocket lining: 100% cotton.",
+    "care": "Professional dry clean only. Steam on a low setting.",
+    "fit_note": "High waist and full-length wide leg. Relaxed through the hip.",
+    "model_info": "Styling reference: size M. See the size guide for garment measurements."
+  },
+  "atelier-leather-tote": {
+    "materials": "Outer: cow leather.\nLining: cotton canvas.",
+    "care": "Wipe with a soft dry cloth. Keep away from prolonged moisture and direct heat.",
+    "fit_note": "One size. 38 × 32 × 12 cm. Fits daily essentials and a 13-inch laptop.",
+    "model_info": "Product-only photograph. Dimensions are the sizing reference."
+  },
+  "folded-crescent-bag": {
+    "materials": "Outer: cow leather.\nLining: 100% cotton.",
+    "care": "Wipe with a soft dry cloth. Store in a dust bag when not in use.",
+    "fit_note": "One size. 30 × 19 × 8 cm. Adjustable shoulder strap.",
+    "model_info": "Product-only photograph. Dimensions are the sizing reference."
+  }
+}

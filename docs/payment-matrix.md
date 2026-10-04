@@ -29,3 +29,10 @@ Shopify Admin의 **Settings → Payments** 및 국가별 payment gateway 목록�
 ## 하지 않는 주장
 
 이 저장소만으로 "PayPal/Apple Pay/WeChat Pay/LINE Pay 연동 완료"라고 주장하지 않는다. 실제 merchant 계정에서 활성화와 테스트 거래 증거가 생긴 뒤 상태를 변경한다.
+
+## 2026-10-04 실제 설정 의존
+
+- merchant entity / store country는 현재 미국 기본값이다. 실제 사업 소재지와 provider eligibility를 확정하지 않았다. 상태: **MERCHANT_ONBOARDING_REQUIRED**.
+- 기본 가격 통화는 KRW다. Markets의 다중 통화 설정은 Shopify Payments 계정 설정 완료를 요구한다. USD/JPY 활성화 및 현지 통화 결제는 **EXTERNAL_DEPENDENCY**다.
+- 실제 PG를 활성화하거나 심사/사업자/법적 정보를 제출하지 않았다. 어떤 실결제 수단도 연동 완료로 주장하지 않는다.
+- Bogus Gateway 또는 지원 테스트 모드의 성공/실패 주문은 아직 수행하지 않았다. checkout QA는 **NOT_TESTED**다.

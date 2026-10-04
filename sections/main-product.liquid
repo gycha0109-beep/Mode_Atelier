@@ -50,21 +50,28 @@
     {% if product.metafields.custom.fit_note.value != blank %}
       <details>
         <summary>{{ 'products.product.fit_note' | t }}</summary>
-        <p>{{ product.metafields.custom.fit_note.value }}</p>
+        <p>{{ product.metafields.custom.fit_note.value | escape }}</p>
       </details>
     {% endif %}
 
     {% if product.metafields.custom.materials.value != blank %}
       <details>
         <summary>{{ 'products.product.materials' | t }}</summary>
-        <div class="rte">{{ product.metafields.custom.materials.value | newline_to_br }}</div>
+        <div class="rte">{{ product.metafields.custom.materials.value | escape | newline_to_br }}</div>
       </details>
     {% endif %}
 
     {% if product.metafields.custom.care.value != blank %}
       <details>
         <summary>{{ 'products.product.care' | t }}</summary>
-        <div class="rte">{{ product.metafields.custom.care.value | newline_to_br }}</div>
+        <div class="rte">{{ product.metafields.custom.care.value | escape | newline_to_br }}</div>
+      </details>
+    {% endif %}
+
+    {% if product.metafields.custom.model_info.value != blank %}
+      <details>
+        <summary>{{ 'products.product.model_info' | t }}</summary>
+        <p>{{ product.metafields.custom.model_info.value | escape }}</p>
       </details>
     {% endif %}
 
