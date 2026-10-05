@@ -3,10 +3,12 @@
     "hero": {
       "type": "hero-editorial",
       "settings": {
+        "image": "shopify://shop_images/hero-editorial.jpg",
         "kicker": "AUTUMN / WINTER 26",
         "heading": "Quiet structure. Global attitude.",
-        "text": "A synthetic global fashion storefront demonstrating a production-minded Shopify launch.",
-        "button_label": "Shop the collection"
+        "text": "Restrained tailoring. Tactile layers. A wardrobe in motion.",
+        "button_label": "Shop the collection",
+        "button_link": "shopify://collections/new-arrivals"
       }
     },
     "featured": {
@@ -14,6 +16,7 @@
       "settings": {
         "kicker": "CURATED NOW",
         "heading": "New arrivals",
+        "collection": "new-arrivals",
         "products_to_show": 4
       }
     },
@@ -23,6 +26,7 @@
         "look1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/editorial-transit.jpg",
             "ratio": "portrait",
             "caption": "Look 01 / Seoul"
           }
@@ -30,6 +34,7 @@
         "look2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/hero-editorial.jpg",
             "ratio": "landscape",
             "caption": "Look 02 / In transit"
           }
@@ -37,8 +42,9 @@
         "look3": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/editorial-material.jpg",
             "ratio": "portrait",
-            "caption": "Look 03 / After dark"
+            "caption": "Material 03 / Soft structure"
           }
         }
       },
@@ -46,16 +52,18 @@
       "settings": {
         "kicker": "EDITORIAL 01",
         "heading": "Between concrete and quiet.",
-        "text": "<p>A modular campaign grid for seasonal imagery, styling stories and collection narratives.</p>"
+        "text": "<p>Wool against concrete. Easy layers for the hours between one city and the next.</p>"
       }
     },
     "story": {
       "type": "image-with-text",
       "settings": {
+        "image": "shopify://shop_images/editorial-material.jpg",
         "kicker": "THE ATELIER",
         "heading": "Designed for movement between cities.",
         "text": "<p>Mode Atelier explores restrained silhouettes, tactile materials and seasonless layering for an international wardrobe.</p>",
-        "button_label": "Discover the story"
+        "button_label": "Discover the story",
+        "button_link": "shopify://pages/about"
       }
     },
     "newsletter": {

@@ -32,5 +32,12 @@
 - United States, Korea(South Korea), Japan Market이 Active다. 세 언어는 기본 myshopify.com 도메인에 연결되어 있다.
 - 스토어 기본 통화는 KRW로 변경했다. merchant business entity와 store address country는 미국 기본값을 유지한다.
 - Japan의 통화 customization UI는 Shopify Payments 계정 설정 완료를 요구한다. USD/JPY 구매 통화는 **MERCHANT_ONBOARDING_REQUIRED**이며 현재 모든 Market은 KRW를 상속한다.
-- Korea/Japan은 아직 배송 요금이 없다. Admin은 해당 주소로 checkout이 불가능함을 명시했다. 테스트 배송 구역/요금을 구성하고 checkout QA를 수행해야 한다.
+- Korea/Japan 합성 테스트 배송 구역을 만들고 `Standard — portfolio test` 5,000 KRW 요금을 저장했다. 설정 전 한국에서 모든 상품이 품절로 보이던 현상은 설정 후 실제 storefront에서 해소됐다. 실물 배송 계약을 의미하지 않는다.
 - 테마 UI의 KO/EN/JA 번역 파일과 Admin의 상품/페이지/섹션 콘텐츠 번역은 별도다. Admin 콘텐츠는 아직 번역하지 않았다. 게시 상태만으로 storefront localization QA PASS를 선언하지 않는다.
+
+## 2026-10-05 확인한 storefront 경로
+
+- EN → KO → JA 장바구니 UI 전환: 동일한 자켓 M / 수량 1 / 338,000 KRW 유지.
+- JA 상태에서 Korea → Japan 국가 전환: 장바구니 유지, 일본어 checkout 진입 및 Japan 선택 확인.
+- 결제 제공자 미설정 안내와 비활성 결제 버튼을 확인했다. 구매 성공 QA는 아직 하지 않았다.
+- Home/PDP/search의 모든 언어 전환 조합, 콘텐츠 번역 및 currency context의 USD/JPY는 미검증 또는 외부 의존이다.

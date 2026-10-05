@@ -1,0 +1,41 @@
+{
+  "synthetic": true,
+  "pages": [
+    {
+      "title": "About",
+      "handle": "about",
+      "id": "162813051198",
+      "html": "<h2>Quiet structure. Everyday movement.</h2><p>Mode Atelier begins with the space between a city and the people moving through it. Clear lines, relaxed proportions and tactile materials form a wardrobe for changing hours.</p><p>Our first collection pairs architectural wool with light nylon, soft knitwear and considered accessories. Built around Seoul, imagined for a life in transit.</p><p>Mode Atelier is a fictional fashion brand created for this portfolio. Its products, imagery and editorial stories are synthetic; no goods are offered for sale.</p>"
+    },
+    {
+      "title": "Lookbook",
+      "handle": "lookbook",
+      "html": "<h2>Between concrete and quiet.</h2><p>Autumn / Winter 26. Wool against concrete. Easy layers for the hours between one city and the next.</p><figure><img src=\"https://cdn.shopify.com/s/files/1/0998/6261/0238/files/editorial-transit.jpg?v=1791118329\" alt=\"Synthetic fashion editorial: charcoal tailoring in a concrete hall\" width=\"1024\" height=\"1536\" loading=\"lazy\" style=\"height:auto\"><figcaption>Look 01 / Seoul</figcaption></figure><figure><img src=\"https://cdn.shopify.com/s/files/1/0998/6261/0238/files/hero-editorial.jpg?v=1791118329\" alt=\"Synthetic models wearing neutral layers in a concrete interior\" width=\"1536\" height=\"1024\" loading=\"lazy\" style=\"height:auto\"><figcaption>Look 02 / In transit</figcaption></figure><figure><img src=\"https://cdn.shopify.com/s/files/1/0998/6261/0238/files/editorial-material.jpg?v=1791118329\" alt=\"Synthetic still life of wool fabric and a black chair\" width=\"1374\" height=\"1145\" loading=\"lazy\" style=\"height:auto\"><figcaption>Material 03 / Soft structure</figcaption></figure><p><small>Fictional collection. All imagery is generated for this portfolio.</small></p>"
+    },
+    {
+      "title": "FAQ",
+      "handle": "faq",
+      "html": "<p>Answers from the atelier.</p><details><summary>Can I purchase these pieces?</summary><p>This is a fictional fashion portfolio. Products and prices demonstrate the shopping journey; no physical goods are offered or fulfilled.</p></details><details><summary>How do the pieces fit?</summary><p>Read the fit note on each product and compare the example garment measurements in our Size Guide. The wool jacket has a relaxed shoulder and cropped length; trousers have a wide leg.</p></details><details><summary>Which countries can I explore?</summary><p>The demonstration includes Korea, Japan and the United States, with English, Korean and Japanese interface languages. Prices currently display in KRW.</p></details><details><summary>What are the shipping and return options?</summary><p>See Shipping &amp; Returns for the proposed service flow and clearly marked test delivery rates.</p></details><details><summary>Which payment methods can I use?</summary><p>No real payment provider is connected. Checkout entry is available for testing; payment methods require merchant onboarding before a real launch.</p></details>"
+    },
+    {
+      "title": "Shipping & Returns",
+      "handle": "shipping-returns",
+      "html": "<h2>Delivery, considered.</h2><p>This page describes a proposed service flow for a fictional brand. No physical orders are fulfilled.</p><h3>Demonstration delivery</h3><p>Korea and Japan use a standard test rate of 5,000 KRW. Available destinations and rates appear at checkout. The United States retains the store’s initial demonstration rates. These rates are test configuration, not a carrier service agreement.</p><h3>Proposed returns</h3><p>An example launch policy would allow a return request within 14 days of delivery for unworn items with original labels. This example is not an active merchant policy and requires merchant and legal review before a real launch.</p><h3>Client service</h3><p>Use the Contact page to explore the enquiry form. Do not submit personal or payment information to this portfolio.</p>"
+    },
+    {
+      "title": "Size Guide",
+      "handle": "size-guide",
+      "html": "<p>Use garment measurements alongside the fit note on each product.</p><h2>Architectural Wool Jacket</h2><table><caption>Example garment measurements in centimetres</caption><thead><tr><th scope=\"col\">Size</th><th scope=\"col\">Chest, flat</th><th scope=\"col\">Length</th><th scope=\"col\">Shoulder</th></tr></thead><tbody><tr><th scope=\"row\">S</th><td>55</td><td>58</td><td>47</td></tr><tr><th scope=\"row\">M</th><td>58</td><td>60</td><td>49</td></tr><tr><th scope=\"row\">L</th><td>61</td><td>62</td><td>51</td></tr></tbody></table><h2>Column Wide Trouser</h2><table><caption>Example garment measurements in centimetres</caption><thead><tr><th scope=\"col\">Size</th><th scope=\"col\">Waist</th><th scope=\"col\">Hip</th><th scope=\"col\">Inseam</th></tr></thead><tbody><tr><th scope=\"row\">S</th><td>70</td><td>98</td><td>76</td></tr><tr><th scope=\"row\">M</th><td>76</td><td>104</td><td>78</td></tr><tr><th scope=\"row\">L</th><td>82</td><td>110</td><td>80</td></tr></tbody></table><p>One Size accessories use a single size option. Product fit notes describe the intended silhouette.</p><p><small>All measurements are synthetic examples for this portfolio, not verified measurements of physical garments.</small></p>"
+    },
+    {
+      "title": "Portfolio Privacy",
+      "handle": "portfolio-privacy",
+      "html": "<h2>Your information.</h2><p>Mode Atelier is a fictional development-store portfolio. Avoid entering real contact, address or payment details in demonstration forms. Shopify hosts the storefront and checkout; its platform privacy controls remain in place.</p><p>This page is an explanatory portfolio notice, not a replacement for a merchant’s reviewed privacy policy. A real launch requires a data-processing review, retention rules, consent configuration and an approved privacy policy.</p>"
+    },
+    {
+      "title": "Portfolio Terms",
+      "handle": "portfolio-terms",
+      "html": "<h2>A fictional atelier.</h2><p>Products, specifications, prices and editorial imagery are synthetic portfolio materials. No goods are offered for sale and no real payment integration is represented as complete.</p><p>Test shopping flows do not establish a real purchase or fulfilment commitment. This notice is not an operational merchant contract. Merchant and legal review are required before a real launch.</p>"
+    }
+  ]
+}

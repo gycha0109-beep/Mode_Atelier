@@ -10,6 +10,7 @@
         "look1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/editorial-transit.jpg",
             "ratio": "portrait",
             "caption": "Look 01 / Seoul"
           }
@@ -17,6 +18,7 @@
         "look2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/hero-editorial.jpg",
             "ratio": "landscape",
             "caption": "Look 02 / In transit"
           }
@@ -24,8 +26,9 @@
         "look3": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/editorial-material.jpg",
             "ratio": "portrait",
-            "caption": "Look 03 / After dark"
+            "caption": "Material 03 / Soft structure"
           }
         }
       },
@@ -33,7 +36,7 @@
       "settings": {
         "kicker": "EDITORIAL 01",
         "heading": "Between concrete and quiet.",
-        "text": "<p>A modular campaign grid for seasonal imagery, styling stories and collection narratives.</p>"
+        "text": "<p>Wool against concrete. Easy layers for the hours between one city and the next.</p>"
       }
     }
   },

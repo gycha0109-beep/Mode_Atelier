@@ -1,0 +1,108 @@
+{
+  "observedDate": "2026-10-05",
+  "timezone": "Asia/Seoul",
+  "store": "mode-atelier-fluhoiwk.myshopify.com",
+  "themeId": "188330770750",
+  "sourceBaseline": "ac69d1075eb845a159ece70b25c479cb7200b488",
+  "sourceContext": "Visual assignments in working tree after baseline, pushed to same draft theme.",
+  "overall": "PARTIAL_RUNTIME_VERIFICATION",
+  "catalog": {
+    "status": "PASS",
+    "products": 6,
+    "variants": 14,
+    "salesChannel": "Online Store",
+    "images": "Six product images render; nine synthetic Files assets uploaded.",
+    "collections": [
+      {
+        "id": "506433110334",
+        "title": "New Arrivals",
+        "count": 6
+      },
+      {
+        "id": "506433732926",
+        "title": "Outerwear",
+        "count": 2
+      },
+      {
+        "id": "506433798462",
+        "title": "Knitwear",
+        "count": 1
+      },
+      {
+        "id": "506450313534",
+        "title": "Bottoms",
+        "count": 1
+      },
+      {
+        "id": "506450346302",
+        "title": "Accessories",
+        "count": 2
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "jacket_variant",
+      "status": "PASS",
+      "observed": "S 328000 KRW, M 338000 KRW, L sold out; URL variant changed.",
+      "variantIds": {
+        "S": "54549527363902",
+        "M": "54549527396670",
+        "L": "54549527429438"
+      }
+    },
+    {
+      "name": "ajax_add",
+      "status": "PASS",
+      "observed": "M quantity 2; header count 2; cart subtotal 676000 KRW."
+    },
+    {
+      "name": "cart_update",
+      "status": "PASS",
+      "observed": "Quantity changed to 1; header count 1; subtotal 338000 KRW."
+    },
+    {
+      "name": "cart_localization",
+      "status": "PASS",
+      "observed": "EN to KO to JA retained jacket M quantity 1."
+    },
+    {
+      "name": "country_context",
+      "status": "PASS",
+      "observed": "JA cart South Korea to Japan retained cart and KRW."
+    },
+    {
+      "name": "checkout_entry",
+      "status": "PASS",
+      "observed": "Japanese checkout, Japan selected, jacket M quantity 1.",
+      "scope": "Entry only. No contact/address submitted. No payment provider configured."
+    },
+    {
+      "name": "predictive_search_wool",
+      "status": "PASS",
+      "observed": "Jacket result returned; Escape collapsed suggestions."
+    },
+    {
+      "name": "search_wool",
+      "status": "PASS",
+      "observed": "Full search returned one jacket result."
+    },
+    {
+      "name": "payment_transaction",
+      "status": "NOT_TESTED",
+      "observed": "No active provider; payment action disabled."
+    },
+    {
+      "name": "a11y_full",
+      "status": "NOT_TESTED"
+    },
+    {
+      "name": "responsive_full",
+      "status": "NOT_TESTED"
+    },
+    {
+      "name": "lighthouse",
+      "status": "NOT_TESTED"
+    }
+  ]
+}

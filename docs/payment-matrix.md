@@ -35,4 +35,5 @@ Shopify Admin의 **Settings → Payments** 및 국가별 payment gateway 목록�
 - merchant entity / store country는 현재 미국 기본값이다. 실제 사업 소재지와 provider eligibility를 확정하지 않았다. 상태: **MERCHANT_ONBOARDING_REQUIRED**.
 - 기본 가격 통화는 KRW다. Markets의 다중 통화 설정은 Shopify Payments 계정 설정 완료를 요구한다. USD/JPY 활성화 및 현지 통화 결제는 **EXTERNAL_DEPENDENCY**다.
 - 실제 PG를 활성화하거나 심사/사업자/법적 정보를 제출하지 않았다. 어떤 실결제 수단도 연동 완료로 주장하지 않는다.
-- Bogus Gateway 또는 지원 테스트 모드의 성공/실패 주문은 아직 수행하지 않았다. checkout QA는 **NOT_TESTED**다.
+- Bogus Gateway 또는 지원 테스트 모드의 성공/실패 주문은 아직 수행하지 않았다. 주문 결제 QA는 **NOT_TESTED**다.
+- 2026-10-05 일본 시장 / 일본어에서 장바구니의 자켓 M 1개 / 338,000 KRW를 포함한 checkout 진입을 확인했다. 결제 제공자 미설정 안내와 비활성 결제 버튼을 실제 확인했다. checkout 진입 검증과 결제 성공 검증을 구분한다.
