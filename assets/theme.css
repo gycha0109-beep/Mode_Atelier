@@ -79,8 +79,9 @@ h2 { font-size: clamp(2rem, 4vw, 4.5rem); line-height: 1; }
 .wordmark { font-weight: 700; letter-spacing: .16em; white-space: nowrap; }
 .desktop-nav { display: flex; justify-content: center; gap: 1.5rem; }
 .site-header__actions { justify-self: end; display: flex; gap: 1rem; font-size: 13px; }
+.site-header__actions > a { display: inline-flex; align-items: center; gap: .25rem; min-height: 44px; min-width: 44px; white-space: nowrap; }
 .site-header__menu-button { display: none; }
-.icon-button { border: 0; background: transparent; padding: .5rem; color: inherit; }
+.icon-button { border: 0; background: transparent; padding: .5rem; color: inherit; min-height: 44px; min-width: 44px; align-items: center; justify-content: center; }
 .mobile-nav { border-top: 1px solid var(--border); padding: 1rem 20px 1.5rem; }
 .mobile-nav a { display: block; padding: .7rem 0; }
 

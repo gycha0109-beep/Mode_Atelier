@@ -34,3 +34,6 @@ jobs:
 
       - name: Locale parity
         run: node scripts/check-locales.mjs
+
+      - name: Ajax cart contracts
+        run: node scripts/check-ajax-cart.mjs

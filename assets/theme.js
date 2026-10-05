@@ -126,6 +126,7 @@ const enableAjaxProductForms = () => {
       button.disabled = true;
       button.setAttribute('aria-busy', 'true');
       if (buttonText) buttonText.textContent = window.modeAtelierStrings?.adding || 'Adding…';
+      let customerError;
 
       try {
         const response = await fetch(`${window.Shopify.routes.root}cart/add.js`, {
@@ -137,14 +138,18 @@ const enableAjaxProductForms = () => {
         const payload = await response.json();
 
         if (!response.ok) {
+          customerError = payload.description || payload.message;
+          // Shopify can partially add available stock before returning a 422.
+          // Keep the badge consistent with the actual cart on that error path.
+          await refreshCartCount().catch(() => {});
           throw new Error(payload.description || payload.message || 'Unable to add item');
         }
 
         await refreshCartCount();
         showCartNotification(window.modeAtelierStrings?.added || 'Added to bag.');
-      } catch (error) {
+      } catch {
         showCartNotification(
-          error.message || window.modeAtelierStrings?.addError || 'Unable to add this item.',
+          customerError || window.modeAtelierStrings?.addError || 'Unable to add this item.',
           true
         );
       } finally {

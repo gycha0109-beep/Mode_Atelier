@@ -2,7 +2,7 @@
   "sections": {
     "main": {
       "type": "main-product",
-      "settings": {}
+      "settings": { "size_guide_page": "size-guide" }
     },
     "recommendations": {
       "type": "product-recommendations",

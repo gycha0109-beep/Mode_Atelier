@@ -46,6 +46,7 @@
       "add_to_cart": "Add to bag",
       "sold_out": "Sold out",
       "regular_price": "Regular price",
+      "from_price": "From {{ price }}",
       "fit_note": "Fit",
       "materials": "Materials",
       "care": "Care",

@@ -46,6 +46,7 @@
       "add_to_cart": "バッグに追加",
       "sold_out": "売り切れ",
       "regular_price": "通常価格",
+      "from_price": "{{ price }}から",
       "fit_note": "フィット",
       "materials": "素材",
       "care": "ケア",

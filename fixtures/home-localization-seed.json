@@ -1,0 +1,30 @@
+{
+  "synthetic": true,
+  "theme_id": "188330770750",
+  "resource": "Templates / Index - Home page",
+  "section_groups": {
+    "Announcement: Text": {"ko": "2026 가을 / 겨울 — 콘크리트와 고요 사이", "ja": "2026 秋 / 冬 — コンクリートと静けさの間"}
+  },
+  "strings": {
+    "Hero: Kicker": {"ko": "2026 가을 / 겨울", "ja": "2026 秋 / 冬"},
+    "Hero: Heading": {"ko": "고요한 구조. 경계 없는 감각.", "ja": "静かな構造。境界のない感性。"},
+    "Hero: Text": {"ko": "절제된 테일러링, 손끝에 남는 질감. 움직이는 일상을 위한 옷.", "ja": "控えめなテーラリング、手に触れる質感。日々の動きに寄り添う服。"},
+    "Hero: Button Label": {"ko": "컬렉션 보기", "ja": "コレクションを見る"},
+    "Featured: Kicker": {"ko": "지금의 셀렉션", "ja": "今のセレクション"},
+    "Featured: Heading": {"ko": "새로운 옷", "ja": "新しいアイテム"},
+    "Lookbook: Kicker": {"ko": "에디토리얼 01", "ja": "エディトリアル 01"},
+    "Lookbook: Heading": {"ko": "콘크리트와 고요 사이.", "ja": "コンクリートと静けさの間。"},
+    "Look1: Caption": {"ko": "룩 01 / 서울", "ja": "ルック 01 / ソウル"},
+    "Look2: Caption": {"ko": "룩 02 / 이동 중", "ja": "ルック 02 / 移動の途中"},
+    "Look3: Caption": {"ko": "소재 03 / 부드러운 구조", "ja": "素材 03 / 柔らかな構造"},
+    "Story: Kicker": {"ko": "아틀리에", "ja": "アトリエ"},
+    "Story: Heading": {"ko": "도시 사이의 움직임을 위해.", "ja": "都市を行き来する日々のために。"},
+    "Story: Button Label": {"ko": "브랜드 이야기", "ja": "ブランドのストーリー"},
+    "Newsletter: Kicker": {"ko": "아틀리에 노트", "ja": "アトリエノート"},
+    "Newsletter: Heading": {"ko": "새로운 컬렉션 소식만 담백하게.", "ja": "新しいコレクションの便りを、静かに。"}
+  },
+  "richtext": {
+    "Lookbook: Text": {"ko": "콘크리트 위의 울. 한 도시에서 다음 도시로, 가볍게 겹쳐 입는 옷.", "ja": "コンクリートに重なるウール。一つの街から次の街へ、軽やかに重ねる服。"},
+    "Story: Text": {"ko": "Mode Atelier는 절제된 실루엣과 촉감이 살아 있는 소재, 계절을 넘나드는 레이어링을 통해 도시의 일상을 그립니다.", "ja": "Mode Atelierは、控えめなシルエットと質感のある素材、季節をまたぐレイヤリングで都市の日常を描きます。"}
+  }
+}

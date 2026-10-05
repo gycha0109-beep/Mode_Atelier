@@ -18,7 +18,14 @@
           <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
           <s>{{ product.compare_at_price_max | money }}</s>
         {% endif %}
-        <span>{{ product.price | money }}</span>
+        <span>
+          {% if product.price_varies %}
+            {% assign card_price = product.price | money %}
+            {{ 'products.product.from_price' | t: price: card_price }}
+          {% else %}
+            {{ product.price | money }}
+          {% endif %}
+        </span>
       </div>
     </div>
   </a>

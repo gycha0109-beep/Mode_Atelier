@@ -1,0 +1,33 @@
+{
+  "blog": "Journal",
+  "handle": "journal",
+  "comments": "disabled",
+  "author": "Mode Atelier Studio",
+  "disclosure": "Original synthetic editorial copy for this fictional portfolio brand.",
+  "articles": [
+    {
+      "title": "AW26: Between Concrete and Quiet",
+      "handle": "aw26-between-concrete-and-quiet",
+      "image": "hero-editorial",
+      "tags": ["AW26", "Editorial"],
+      "excerpt": "A wool jacket, a long trouser, and the space between them. Notes on the AW26 silhouette.",
+      "html": "<p>The starting point is a straight line: the edge of a shoulder, the fall of a trouser, a seam running down the back. AW26 keeps that line clear, then gives it room to move.</p><h2>A softer frame</h2><p>The Architectural Wool Jacket sits away from the body. Its broad shoulder meets an unhurried hem, with enough space underneath for a fine knit. The Column Wide Trouser carries the same proportion through the leg.</p><p>Charcoal, stone, and off-white hold the collection together. The contrast comes from texture: a dry wool surface beside a compact knit, a smooth nylon shell against the grain of a leather tote.</p><h2>Worn in motion</h2><p>These pieces are imagined for the walk between places. A jacket worn open. A tote held low. Layers that can be added without changing the silhouette.</p><p><a href=\"/collections/new-arrivals\">Explore the AW26 edit</a></p><p><small>Mode Atelier is a fictional brand. This editorial and its images were created for a Shopify portfolio.</small></p>"
+    },
+    {
+      "title": "Material Note: Soft Structure",
+      "handle": "material-note-soft-structure",
+      "image": "editorial-material",
+      "tags": ["Materials", "Studio notes"],
+      "excerpt": "Why a quiet surface and a little weight change the way a knit sits.",
+      "html": "<p>Structure does not have to feel stiff. For the Soft Structure Knit, the idea is a compact surface with an easy shoulder: a layer that holds its outline while following the wearer.</p><h2>Texture before decoration</h2><p>The synthetic catalog specifies a wool and cotton blend. Wool brings softness; cotton gives the imagined fabric a drier touch. A close neckline and restrained rib finish keep attention on the proportion.</p><p>Wear it alone with a wide trouser, or beneath the Architectural Wool Jacket. The slightly dropped shoulder leaves space through the upper body without adding a heavy layer.</p><h2>A slower care routine</h2><p>Air between wears, fold rather than hang, and follow the product's care notes before washing. The composition and care details in this demo are illustrative specifications, not certifications for a manufactured garment.</p><p><a href=\"/products/soft-structure-knit\">View the Soft Structure Knit</a></p><p><small>Original synthetic material study for the fictional Mode Atelier portfolio.</small></p>"
+    },
+    {
+      "title": "Seoul / Tokyo / Transit",
+      "handle": "seoul-tokyo-transit",
+      "image": "editorial-transit",
+      "tags": ["Editorial", "Transit"],
+      "excerpt": "One small wardrobe, imagined across two cities. Nylon, wool, and a bag for the journey.",
+      "html": "<p>A city wardrobe is assembled in small decisions. What fits under the shell. Which bag leaves a hand free. How a trouser falls over a shoe after a long walk.</p><h2>Three layers, one outline</h2><p>The Transit Nylon Shell is the outer layer of this imagined journey. Underneath, the Soft Structure Knit adds a quieter texture. The Column Wide Trouser finishes a long, loose line.</p><p>The Folded Crescent Bag stays close to the body; the Atelier Leather Tote gives the same outfit more carrying space. Neither needs a different wardrobe around it.</p><h2>Across the route</h2><p>Seoul and Tokyo are references for the pace of the editorial: a platform, a concrete passage, an early street. The visuals are synthetic compositions, not photographs of a commissioned shoot or named location.</p><p><a href=\"/pages/lookbook\">See the Transit lookbook</a></p><p><small>This is an original fictional brand story created for the Mode Atelier Shopify portfolio.</small></p>"
+    }
+  ]
+}

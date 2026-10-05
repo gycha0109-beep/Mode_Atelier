@@ -17,6 +17,7 @@
       {% endfor %}
     </nav>
 
+    {% if section.settings.show_payment_icons %}
     <div>
       <p class="eyebrow">{{ 'sections.footer.payments' | t }}</p>
       <div class="payment-icons" aria-label="{{ 'sections.footer.payment_methods' | t }}">
@@ -25,6 +26,7 @@
         {% endfor %}
       </div>
     </div>
+    {% endif %}
   </div>
   <div class="page-width site-footer__legal">
     <span>© {{ 'now' | date: '%Y' }} {{ shop.name }}</span>
@@ -36,7 +38,8 @@
 {
   "name": "Footer",
   "settings": [
-    { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" }
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" },
+    { "type": "checkbox", "id": "show_payment_icons", "label": "Show verified payment methods", "default": false, "info": "Enable after verifying the real provider. Test gateways can report card and wallet icons without real payment support." }
   ]
 }
 {% endschema %}

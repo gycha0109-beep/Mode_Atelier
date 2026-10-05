@@ -28,6 +28,7 @@
   </div>
 
   <nav id="MobileMenu" class="mobile-nav" hidden data-mobile-menu aria-label="{{ 'sections.header.mobile_navigation' | t }}">
+    <a href="{{ routes.search_url }}">{{ 'sections.header.search' | t }}</a>
     {% for link in linklists[section.settings.menu].links %}
       <div class="mobile-nav__item">
         <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>

@@ -46,6 +46,7 @@
       "add_to_cart": "장바구니 담기",
       "sold_out": "품절",
       "regular_price": "정상가",
+      "from_price": "{{ price }}부터",
       "fit_note": "핏",
       "materials": "소재",
       "care": "관리 방법",
