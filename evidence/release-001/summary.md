@@ -1,9 +1,9 @@
-# Release 001 — partial verification / account authentication gate
+# Release 001 — Dev Store portfolio handover
 
-Status: **IMPLEMENTED; targeted runtime VERIFIED; release closeout pending**. Full release readiness is not claimed.
+Status: **VERIFIED for the documented Dev Store portfolio smoke scope; ready for portfolio review and handover**. Production go-live remains BLOCKED_EXTERNAL. Optional audits and unexercised platform paths below are not PASS claims.
 
 - Date: 2026-10-05 (Asia/Seoul)
-- Theme source SHA: `b1df32702ae3d28b9d7e0a07b25d283c2fe62ef7`; later documentation/evidence commits do not change the uploaded source.
+- Theme source SHA: `ff5447df6850212f769c9e8ee3955a0c0cc7a41d`; later documentation/evidence commits do not change the uploaded source. The final source adds one CSS rule to keep the Shopify header section wrapper sticky; earlier commerce receipts use b1df327, whose commerce code is unchanged.
 - Store: `mode-atelier-fluhoiwk.myshopify.com`
 - Unpublished theme: Mode Atelier Dev / `188330770750`
 - [Preview](https://mode-atelier-fluhoiwk.myshopify.com?preview_theme_id=188330770750)
@@ -40,13 +40,15 @@ KO/JA free auto translation completed with explicit terms consent; draft Home/an
 | Search | wool product/page/article, Outerwear→one jacket; query preserved on sort/locale switch | VERIFIED |
 | Predictive | wool product, about page, outer collection, empty result, ESC and input focus | VERIFIED; query-suggestion content not returned in sampled queries |
 | Keyboard | Skip link to main, menu Enter, FAQ Space, filter summary/checkbox/Apply/Clear | VERIFIED for smoke scope |
+| Predictive keyboard | Input → Tab to Search button → Tab to returned product link → Enter opens actual PDP; ESC closes from input | VERIFIED for this flow; full ARIA/arrow-key audit not claimed |
+| Sticky/grid regression | 1440 PDP scrollY 500: header top 0 / product info top 110; 390 collection scrollY 450: header top 0. Collection four desktop / two mobile columns | VERIFIED on final source |
 | Responsive | Home/collection/PDP/cart/search/Lookbook/Journal/article/FAQ/Contact: 390/768/1440 captures, no observed overflow | VERIFIED for retained captures only |
 | SEO | Native ProductGroup/Article JSON-LD, canonical/description; article type and HTTPS/alt image metadata | VERIFIED for sampled PDP/article |
-| 404 | KO missing-page recovery | VERIFIED |
+| 404 | KO/EN/JA missing-page headings and home recovery; EN/JA retain localized route after switch | VERIFIED |
 | Password | Custom Coming Soon in authenticated Theme Editor | VERIFIED, Admin preview only |
 | Theme Editor | Hero editable dirty state restored; announcement/menus/collection/lookbook/story/newsletter/footer, width/radii, size guide; unused FAQ controls | VERIFIED |
 | Contact/newsletter | Required-field validation; no inquiry/subscription sent | Validation checked, submissions NOT_TESTED |
-| Signed-in account | Email/OTP, avatar/orders/profile | BLOCKED_EXTERNAL |
+| Signed-in account | User completed email/OTP; avatar, hosted Orders and Profile loaded; returned to draft storefront still signed in | VERIFIED; authentication values and profile data excluded from evidence |
 | Lighthouse/axe | Not executed; no scores or full accessibility PASS claimed | NOT_TESTED |
 
 Inventory cleanup: Jacket S restored to 8; temporary S lines removed. Test order #1001 remains unfulfilled as evidence; it consumed one tote stock. Do not fulfill, purchase labels or send real customer messages for this order.
@@ -55,4 +57,8 @@ Inventory cleanup: Jacket S restored to 8; temporary S lines removed. Test order
 
 All screenshots are actual draft preview/Admin captures. Permission/translation/editor images establish configuration, not final storefront appearance. Earlier captures can predate content translations/payment-icon changes. Current localized Home captures and current draft are authoritative. Responsive JSON records captured paths/dimensions/lazy image observations; last observation per file is the retained capture. Metafield-definitions image predates import and its zero counts are historical. No credential or OTP is recorded.
 
-Next gate: user completes customer-account email/OTP authentication, then verify signed-in Orders/Profile/avatar and final evidence/editorial review. Predictive query suggestions, optional Lighthouse/axe and inquiry/subscription submission remain explicitly untested. Real PG, merchant country/eligibility, USD/JPY, DNS and production publish are external dependencies. No main merge or Live theme publish.
+Customer-account authentication gate is closed. Orders is empty for the user's own account; synthetic test order #1001 belongs to the separate QA customer and is not asserted to appear there. Profile evidence is cropped above personal field values. No account/profile setting was changed.
+
+Portfolio closeout includes actual evidence review, signed-in account verification, final variant/404/sticky captures, updated requirements/QA/handover and PR checks. Predictive query-suggestion content was not returned in sampled queries. Pagination is implemented but not exercised with six products and a minimum page size of eight. Optional Lighthouse/axe, all-browser certification, inquiry/subscription delivery and full editorial/legal translation approval remain untested. Real PG, merchant country/eligibility, USD/JPY, DNS and production publish are external dependencies. No main merge or Live theme publish.
+
+See [final closeout receipt](qa/closeout-2026-10-05.json), [final source validation](theme-check/validation-ff5447d.json) and [curated evidence index](index.md). Historical captures/receipts remain labeled; final portfolio views in the index contain actual synthetic imagery rather than placeholder artwork.

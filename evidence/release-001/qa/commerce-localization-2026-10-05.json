@@ -57,8 +57,10 @@
   "customerAccount": {
     "signedOutDialog": "VERIFIED",
     "ordersProfileEntryLinks": "VERIFIED",
-    "signedIn": "BLOCKED_EXTERNAL: user email/OTP required",
-    "evidence": "commerce/customer-account-entry-ko.jpg"
+    "signedIn": "VERIFIED after user completed authentication: avatar, hosted Orders/Profile and storefront return",
+    "orders": "Actual user account empty; synthetic test order belongs to separate QA customer",
+    "privacy": "No email/OTP/profile values saved; Profile screenshot cropped above personal values; no settings changed",
+    "evidence": ["commerce/customer-account-entry-ko.jpg", "commerce/customer-orders-signed-in-ko.jpg", "commerce/customer-profile-header-ko.jpg"]
   },
   "notClaimed": ["Real PG integration", "USD/JPY checkout", "Full accessibility audit", "Lighthouse scores", "Contact/newsletter delivery", "Live 422 runtime PASS", "Public production release"]
 }

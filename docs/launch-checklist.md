@@ -1,5 +1,14 @@
 # Launch Checklist
 
+## Dev Store 포트폴리오 gate — 2026-10-05
+
+- [x] 실제 unpublished theme 업로드 / 원본 합성 이미지와 catalog / 메뉴·페이지·Journal
+- [x] EN/KO/JA, US/KR/JP의 KRW preview와 주요 커머스 smoke
+- [x] 고객 계정 signed-in 진입, test gateway 승인/거절 증거
+- [x] 정적 검증 / PR CI / 실제 viewport 캡처 / 인수인계 문서
+
+위 gate는 문서화된 Dev Store 포트폴리오 검토 범위다. 아래 항목은 **실가맹점 production go-live** 체크이며 합성 데이터나 test payment로 대신 체크하지 않는다. [Release 001](../evidence/release-001/summary.md)의 미검증 범위도 함께 확인한다.
+
 ## 콘텐츠
 
 - [ ] 실제 로고

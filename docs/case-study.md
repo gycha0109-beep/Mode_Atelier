@@ -2,7 +2,7 @@
 
 ## 문제
 
-신규 글로벌 패션 브랜드는 브랜드 에셋만 있고 IA, UI, 다국어, 결제/배송 정책이 확정되지 않았다. 일정이 짧은 상황에서 디자인과 개발뿐 아니라 "무엇이 외부 승인에 의존하는지"까지 분리해야 한다.
+글로벌 패션 브랜드 신규 쇼핑몰 구축 공고의 요구사항을 일반화한 합성 프로젝트다. 실제 클라이언트 소스·상품·브랜드 이미지는 사용하지 않고 MODE ATELIER의 catalog와 원본 synthetic visual을 만들었다. IA, 다국어, 관리자 편집성, 탐색부터 checkout까지 연결하고 외부 승인이 필요한 결제·배송·법률 정책을 구분하는 것이 과제였다.
 
 ## 접근
 
@@ -23,7 +23,7 @@
 
 ## 포트폴리오에서 보여줄 증거
 
-최종 단계에서 아래 증거를 추가한다.
+실제 캡처와 관찰 기록은 [Release 001 evidence index](../evidence/release-001/index.md)에 있다.
 
 - Home desktop/mobile
 - Collection
@@ -31,9 +31,12 @@
 - Cart
 - KO/EN/JA
 - Theme Check PASS
-- test checkout 진입
+- test checkout 거절 후 승인 / Admin Test order #1001
+- 사용자 직접 인증 후 hosted account Orders/Profile
 - release checklist
 
 ## 현재 한계
 
-development store의 실상품과 실제 merchant payment account가 아직 연결되지 않은 synthetic repository 단계다. 따라서 checkout provider의 실승인/실거래는 완료로 주장하지 않는다.
+실제 Dev Store에 6상품/14variants/9원본 합성 이미지, 5컬렉션, 4메타필드 정의, 메뉴·페이지·3Journal을 입력했다. Search & Discovery 필터와 EN/KO/JA, US/KR/JP를 실제 preview에서 검증했으며 통화는 모두 KRW다. 커머스와 모바일 smoke에서 발견한 네트워크 오류 현지화·재고 부분 성공 후 배지 처리·상품 가격 표시·sticky header 문제를 수정했다.
+
+Test Payment Gateway의 거절/승인을 검증했으나 실가맹점 PG 계약·실거래는 완료로 주장하지 않는다. Dev Store는 password protected/unpublished이고 main과 Live Horizon은 보존됐다. Lighthouse/axe, 문의·구독 전송, 여섯 상품으로 발생하지 않는 pagination, live stock 422 등 미검증 항목과 market 경고 불일치는 [release summary](../evidence/release-001/summary.md)에 남겼다. 포트폴리오 검토·인수인계와 실제 production go-live는 별도 상태다.

@@ -58,3 +58,9 @@ CI에서도 Shopify Theme Check를 실행합니다.
 이 저장소는 storefront/theme 코드와 런칭 설계를 증명합니다. 실제 결제 승인, 실가맹점 PG 계약, 도메인 소유권 확인, 실배송사 계약, 세금/관부가세 정책 확정은 실제 merchant 계정과 사업자 정보가 있어야 완료할 수 있으므로 코드상 완료로 표시하지 않습니다.
 
 자세한 범위와 증거 기준은 `docs/`를 참고하세요.
+
+## 실제 Dev Store 포트폴리오
+
+2026-10-05 기준 Mode Atelier Dev(`188330770750`)를 unpublished로 업로드하고 합성 catalog 6상품/14variants, 이미지 9개, 3개 Journal, 필터, KO/EN/JA, 계정 로그인과 테스트 결제를 실제 검증했습니다. [Draft preview](https://mode-atelier-fluhoiwk.myshopify.com?preview_theme_id=188330770750)는 Dev Store의 관리자 인증/접근 제약이 있습니다.
+
+검토 순서는 [evidence index](evidence/release-001/index.md), [검증 범위·한계](evidence/release-001/summary.md), [handover](docs/handover-guide.md)입니다. main과 Live Horizon은 보존했습니다. 문서화된 포트폴리오 smoke 범위는 VERIFIED이며 production PG/DNS/법률 정책 승인은 별도 외부 gate입니다.

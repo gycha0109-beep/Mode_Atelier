@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-05",
+  "themeSourceCommit": "ff5447df6850212f769c9e8ee3955a0c0cc7a41d",
+  "store": "mode-atelier-fluhoiwk.myshopify.com",
+  "themeId": 188330770750,
+  "role": "unpublished",
+  "runtime": "Actual authenticated Chrome draft preview and Shopify-hosted customer account",
+  "status": "VERIFIED for documented portfolio smoke scope; production BLOCKED_EXTERNAL",
+  "stickyHeader": {
+    "expected": "Header remains at viewport top after scrolling while sticky setting enabled",
+    "before": "At 1440px, scrollY 878, header top -842.40625; product info top 110",
+    "cause": "Inner sticky header constrained by its 73px Shopify section wrapper",
+    "fix": "Sticky positioning on wrapper containing site-header--sticky",
+    "afterDesktop": {"width": 1440, "scrollY": 500, "headerTop": 0, "productInfoTop": 110},
+    "afterMobile": {"width": 390, "scrollY": 450, "headerTop": 0},
+    "status": "VERIFIED",
+    "evidence": ["qa/sticky-header-pdp-1440.jpg", "qa/sticky-header-collection-390.jpg"]
+  },
+  "collectionGrid": {"desktopColumns": 4, "desktopWidth": 1440, "mobileColumns": 2, "mobileWidth": 390, "products": 6, "observedHorizontalOverflow": false},
+  "variant": {
+    "medium": {"id": "54549527396670", "price": "KRW 338000", "urlUpdated": true, "addEnabled": true},
+    "large": {"id": "54549527429438", "addDisabled": true, "label": "Sold out"},
+    "evidence": ["commerce/variant-m-price-url-1440.jpg", "commerce/variant-l-sold-out-1440.jpg"]
+  },
+  "predictiveKeyboard": {
+    "query": "woo",
+    "observed": "Tab from input to Search button, next Tab to returned jacket link, Enter navigated to native PDP",
+    "status": "VERIFIED for Tab/Enter flow; full combobox arrow-key and screen-reader audit not claimed"
+  },
+  "newsletter": {"observed": "Empty submit prevented; contact[email] focused and validity.valueMissing true", "delivery": "NOT_TESTED; no subscription sent"},
+  "emptySearch": {"query": "zz-no-product-001", "results": 0, "message": "No results found.", "evidence": "mobile/search-empty-390.jpg"},
+  "notFound": {"locales": ["en", "ko", "ja"], "evidence": ["localization/404-en-390.jpg", "mobile/404-ko-390.jpg", "localization/404-ja-390.jpg"], "observedHorizontalOverflow": false},
+  "customerAccount": {"status": "VERIFIED", "userCompletedAuthentication": true, "avatar": true, "ordersLoaded": true, "profileLoaded": true, "returnedToDraftSignedIn": true, "profileValuesRecorded": false, "settingsChanged": false, "evidence": ["commerce/customer-orders-signed-in-ko.jpg", "commerce/customer-profile-header-ko.jpg", "desktop/home-1440.jpg"]},
+  "optionalOrUnexercised": ["Lighthouse/axe", "Full screen-reader/arrow-key audit", "Pagination with more than page-size products", "Query-suggestion content absent in sampled responses", "Contact/newsletter delivery", "Live Ajax stock 422"],
+  "externalDependencies": ["Real PG onboarding and payment-method eligibility", "Merchant country confirmation", "USD/JPY policies", "DNS ownership", "Merchant legal/shipping/tax review", "Production publish approval"],
+  "cleanup": "Viewport cleared; network blocking removed; cart empty; no main merge or live publish; test order #1001 left unfulfilled"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-05",
+  "themeSourceCommit": "ff5447df6850212f769c9e8ee3955a0c0cc7a41d",
+  "shopifyCli": "4.8.4",
+  "checks": {
+    "shopify theme check --output json": {"exitCode": 0, "result": []},
+    "node scripts/check-locales.mjs": {"exitCode": 0, "result": "Locale key/interpolation parity PASS"},
+    "node scripts/check-ajax-cart.mjs": {"exitCode": 0, "result": "Six unit contracts PASS; not live payment/inventory QA"},
+    "git diff --check": {"exitCode": 0}
+  },
+  "push": {"strict": true, "nodelete": true, "only": "assets/theme.css", "exitCode": 0, "themeId": 188330770750, "role": "unpublished"},
+  "previewUrl": "https://mode-atelier-fluhoiwk.myshopify.com?preview_theme_id=188330770750",
+  "ci": "Final documentation/evidence HEAD check is recorded in PR #1; earlier b1 and b18 receipts are historical"
+}
