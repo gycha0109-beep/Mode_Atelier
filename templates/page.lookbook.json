@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "lookbook": {
+      "type": "lookbook-grid",
+      "blocks": {
+        "look1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/editorial-transit.jpg",
+            "ratio": "portrait",
+            "caption": "Look 01 / Seoul"
+          }
+        },
+        "look2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hero-editorial.jpg",
+            "ratio": "landscape",
+            "caption": "Look 02 / In transit"
+          }
+        },
+        "look3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/editorial-material.jpg",
+            "ratio": "portrait",
+            "caption": "Material 03 / Soft structure"
+          }
+        }
+      },
+      "block_order": ["look1", "look2", "look3"],
+      "settings": {
+        "kicker": "EDITORIAL 01",
+        "heading": "Between concrete and quiet.",
+        "text": "<p>Wool against concrete. Easy layers for the hours between one city and the next.</p>"
+      }
+    }
+  },
+  "order": ["main", "lookbook"]
+}

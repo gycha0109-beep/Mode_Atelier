@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "faq": {
+      "type": "content-accordion",
+      "blocks": {
+        "shipping": {
+          "type": "item",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>Shipping estimates should be configured per market before launch.</p>"
+          }
+        },
+        "returns": {
+          "type": "item",
+          "settings": {
+            "question": "Can I return an item?",
+            "answer": "<p>Return windows and conditions should match the merchant's final policy.</p>"
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "question": "Which payment methods are available?",
+            "answer": "<p>Available methods depend on the buyer market and the merchant's approved payment providers.</p>"
+          }
+        }
+      },
+      "block_order": ["shipping", "returns", "payment"],
+      "settings": {
+        "kicker": "CLIENT SERVICE",
+        "heading": "Frequently asked questions",
+        "text": "<p>Operational copy remains intentionally conditional until the real merchant confirms market, shipping and payment policies.</p>"
+      }
+    }
+  },
+  "order": ["main", "faq"]
+}

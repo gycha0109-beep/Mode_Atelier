@@ -1,0 +1,22 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Mode Atelier",
+    "theme_version": "0.2.0",
+    "theme_author": "Mode Atelier Portfolio",
+    "theme_documentation_url": "https://github.com/gycha0109-beep/Mode_Atelier",
+    "theme_support_url": "https://github.com/gycha0109-beep/Mode_Atelier/issues"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      { "type": "color", "id": "background_color", "label": "Background", "default": "#F5F3EE" },
+      { "type": "color", "id": "text_color", "label": "Text", "default": "#111111" },
+      { "type": "color", "id": "brand_accent", "label": "Accent", "default": "#111111" },
+      { "type": "color", "id": "muted_color", "label": "Muted text", "default": "#6E6B64" },
+      { "type": "range", "id": "page_width", "label": "Page width", "min": 1200, "max": 1600, "step": 20, "unit": "px", "default": 1480 },
+      { "type": "range", "id": "button_radius", "label": "Button corner radius", "min": 0, "max": 24, "step": 2, "unit": "px", "default": 0 },
+      { "type": "range", "id": "media_radius", "label": "Media corner radius", "min": 0, "max": 24, "step": 2, "unit": "px", "default": 0 }
+    ]
+  }
+]

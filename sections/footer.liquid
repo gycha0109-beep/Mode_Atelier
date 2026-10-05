@@ -1,0 +1,45 @@
+<footer class="site-footer">
+  {% if localization.available_countries.size > 1 or localization.available_languages.size > 1 %}
+    <div class="page-width footer-localization">
+      {% render 'localization-selectors' %}
+    </div>
+  {% endif %}
+
+  <div class="page-width site-footer__grid">
+    <div>
+      <p class="wordmark">{{ shop.name | default: 'MODE ATELIER' }}</p>
+      <p class="site-footer__copy">{{ 'sections.footer.tagline' | t }}</p>
+    </div>
+
+    <nav aria-label="{{ 'sections.footer.navigation' | t }}">
+      {% for link in linklists[section.settings.menu].links %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+
+    {% if section.settings.show_payment_icons %}
+    <div>
+      <p class="eyebrow">{{ 'sections.footer.payments' | t }}</p>
+      <div class="payment-icons" aria-label="{{ 'sections.footer.payment_methods' | t }}">
+        {% for type in shop.enabled_payment_types %}
+          {{ type | payment_type_svg_tag }}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="page-width site-footer__legal">
+    <span>© {{ 'now' | date: '%Y' }} {{ shop.name }}</span>
+    <span>{{ 'sections.footer.prototype_notice' | t }}</span>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" },
+    { "type": "checkbox", "id": "show_payment_icons", "label": "Show verified payment methods", "default": false, "info": "Enable after verifying the real provider. Test gateways can report card and wallet icons without real payment support." }
+  ]
+}
+{% endschema %}

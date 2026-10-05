@@ -1,0 +1,9 @@
+{% if request.page_type == 'product' %}
+  <script type="application/ld+json">
+    {{ product | structured_data }}
+  </script>
+{% elsif request.page_type == 'article' %}
+  <script type="application/ld+json">
+    {{ article | structured_data }}
+  </script>
+{% endif %}

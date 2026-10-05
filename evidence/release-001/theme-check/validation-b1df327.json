@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-05",
+  "themeSourceCommit": "b1df32702ae3d28b9d7e0a07b25d283c2fe62ef7",
+  "environment": "Windows / PowerShell / Shopify CLI 4.8.4",
+  "commands": [
+    {"command": "shopify theme check --output json", "exitCode": 0, "result": []},
+    {"command": "node scripts/check-locales.mjs", "exitCode": 0, "result": "Locale key and interpolation parity PASS"},
+    {"command": "node scripts/check-ajax-cart.mjs", "exitCode": 0, "result": "Locale route, success, partial 422, sold-out, refresh failure, localized network error contracts PASS"}
+  ],
+  "assetGates": {"CSS": 100000, "JavaScript": 10000, "source": ".theme-check.yml"},
+  "strictPush": {"success": true, "themeId": 188330770750, "role": "unpublished"},
+  "hostedCI": "Latest PR checks are authoritative; previous validation-2026-10-05.json is historical b18cd5b evidence",
+  "unitBoundary": "Ajax fixtures execute actual theme.js with simulated responses. Live stock 422 response was not reproduced; network failure and checkout reconciliation were separately checked in Chrome."
+}

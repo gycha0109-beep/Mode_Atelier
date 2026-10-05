@@ -1,0 +1,76 @@
+<section class="section-shell page-width">
+  <header class="page-header">
+    <p class="eyebrow">{{ 'search.general.eyebrow' | t }}</p>
+    <h1>{{ 'search.general.title' | t }}</h1>
+  </header>
+
+  <predictive-search data-url="{{ routes.predictive_search_url }}">
+    <form class="search-form predictive-search-form" action="{{ routes.search_url }}" method="get" role="search">
+      <label class="visually-hidden" for="SearchInput">{{ 'search.general.placeholder' | t }}</label>
+      <input
+        id="SearchInput"
+        type="search"
+        name="q"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'search.general.placeholder' | t }}"
+        role="combobox"
+        aria-expanded="false"
+        aria-owns="predictive-search-results"
+        aria-controls="predictive-search-results"
+        aria-haspopup="listbox"
+        aria-autocomplete="list"
+        autocomplete="off"
+        data-predictive-search-input
+      >
+      <input type="hidden" name="options[prefix]" value="last">
+      <button class="button button--dark" type="submit">{{ 'search.general.submit' | t }}</button>
+      <div id="predictive-search" class="predictive-search" tabindex="-1" hidden data-predictive-search-results></div>
+    </form>
+  </predictive-search>
+
+  {% if search.performed %}
+    <p class="search-summary">{{ 'search.general.results_with_count' | t: count: search.results_count, terms: search.terms }}</p>
+
+    {% assign encoded_terms = search.terms | url_encode %}
+    {% capture clear_search_url %}{{ routes.search_url }}?q={{ encoded_terms }}&options%5Bprefix%5D=last{% endcapture %}
+    {% assign sort_by = search.sort_by | default: search.default_sort_by %}
+    {% render 'facets',
+      results: search,
+      sort_options: search.sort_options,
+      sort_by: sort_by,
+      search_terms: search.terms,
+      clear_url: clear_search_url
+    %}
+
+    {% paginate search.results by 20 %}
+      <div class="product-grid">
+        {% for item in search.results %}
+          {% if item.object_type == 'product' %}
+            {% render 'product-card', product: item %}
+          {% else %}
+            <article class="search-card">
+              <p class="eyebrow">{{ item.object_type }}</p>
+              <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+              <p>{{ item.content | strip_html | truncatewords: 24 }}</p>
+            </article>
+          {% endif %}
+        {% else %}
+          <div class="collection-empty">
+            <p>{{ 'search.general.no_results' | t }}</p>
+            <a class="text-link" href="{{ clear_search_url }}">{{ 'facets.clear_all' | t }}</a>
+          </div>
+        {% endfor %}
+      </div>
+      {% if paginate.pages > 1 %}
+        <nav class="pagination" aria-label="{{ 'general.pagination.label' | t }}">{{ paginate | default_pagination }}</nav>
+      {% endif %}
+    {% endpaginate %}
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Main search",
+  "settings": []
+}
+{% endschema %}

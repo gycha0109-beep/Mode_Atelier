@@ -1,0 +1,16 @@
+<div
+  class="cart-notification"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+  hidden
+  data-cart-notification
+>
+  <div>
+    <p class="cart-notification__message" data-cart-notification-message></p>
+    <a class="text-link" href="{{ routes.cart_url }}">{{ 'cart.notification.view_cart' | t }}</a>
+  </div>
+  <button class="icon-button" type="button" aria-label="{{ 'cart.notification.close' | t }}" data-cart-notification-close>
+    <span aria-hidden="true">×</span>
+  </button>
+</div>

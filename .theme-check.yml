@@ -1,0 +1,14 @@
+extends:
+  - theme-check:recommended
+
+AssetSizeCSS:
+  enabled: true
+  thresholdInBytes: 100000
+
+AssetSizeJavaScript:
+  enabled: true
+  thresholdInBytes: 10000
+
+PaginationSize:
+  enabled: true
+  maxSize: 250

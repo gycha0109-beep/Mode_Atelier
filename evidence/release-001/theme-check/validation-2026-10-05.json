@@ -1,0 +1,18 @@
+{
+  "sourceCommit": "b18cd5bcfed19c36a8e24c592d5fb24505d817c6",
+  "date": "2026-10-05",
+  "timezone": "Asia/Seoul",
+  "local": {
+    "themeCheck": {"exitCode": 0, "issues": []},
+    "localeKeyAndInterpolationParity": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "ci": {
+    "runId": 37255612120,
+    "url": "https://github.com/gycha0109-beep/Mode_Atelier/actions/runs/37255612120",
+    "headSha": "b18cd5bcfed19c36a8e24c592d5fb24505d817c6",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "scope": "Static theme and locale checks. Does not certify runtime accessibility, performance, payment success or a complete release."
+}

@@ -1,0 +1,156 @@
+{
+  "accessibility": { "skip_to_text": "Skip to content" },
+  "general": {
+    "view_all": "View all",
+    "pagination": { "label": "Pagination" },
+    "404": {
+      "title": "This page has moved on.",
+      "subtext": "The piece you were looking for is no longer here.",
+      "back_home": "Return home"
+    }
+  },
+  "localization": {
+    "country": "Country / region",
+    "language": "Language"
+  },
+  "facets": {
+    "from": "From",
+    "to": "To",
+    "reset": "Reset",
+    "apply": "Apply",
+    "sort": "Sort",
+    "clear_all": "Clear all"
+  },
+  "sections": {
+    "announcement": { "label": "Announcement" },
+    "header": {
+      "menu": "Open menu",
+      "primary_navigation": "Primary navigation",
+      "mobile_navigation": "Mobile navigation",
+      "search": "Search",
+      "account": "Account",
+      "cart": "Bag"
+    },
+    "footer": {
+      "tagline": "Independent fashion commerce prototype for a global D2C launch.",
+      "navigation": "Footer navigation",
+      "payments": "Accepted payments",
+      "payment_methods": "Payment methods",
+      "prototype_notice": "Synthetic portfolio project — not a live merchant."
+    }
+  },
+  "products": {
+    "product": {
+      "variant": "Option",
+      "quantity": "Quantity",
+      "add_to_cart": "Add to bag",
+      "sold_out": "Sold out",
+      "regular_price": "Regular price",
+      "from_price": "From {{ price }}",
+      "fit_note": "Fit",
+      "materials": "Materials",
+      "care": "Care",
+      "model_info": "Model & sizing",
+      "size_guide": "Size guide",
+      "shipping_returns": "Shipping & returns",
+      "shipping_returns_body": "Shipping rates, duties, taxes and return windows must be configured per market before launch.",
+      "global_checkout": "Global checkout",
+      "global_checkout_body": "Available payment methods depend on merchant country, payment provider eligibility and buyer location."
+    },
+    "recommendations": {
+      "eyebrow": "Continue exploring"
+    }
+  },
+  "collections": {
+    "general": {
+      "collection": "Collection",
+      "product_count": "{{ count }} products",
+      "no_matches": "No products found."
+    },
+    "sorting": { "title": "Sort" },
+    "list": {
+      "eyebrow": "Shop by edit",
+      "title": "Collections",
+      "empty": "No collections are available yet."
+    }
+  },
+  "cart": {
+    "general": {
+      "eyebrow": "Your selection",
+      "title": "Shopping bag",
+      "empty": "Your bag is empty.",
+      "continue_shopping": "Continue shopping",
+      "quantity": "Quantity",
+      "remove": "Remove",
+      "subtotal": "Subtotal",
+      "taxes_shipping": "Taxes, duties and shipping are calculated according to market configuration and checkout eligibility.",
+      "update": "Update bag",
+      "checkout": "Checkout"
+    },
+    "notification": {
+      "adding": "Adding…",
+      "added": "Added to your bag.",
+      "error": "Unable to add this item. Please try again.",
+      "view_cart": "View bag",
+      "close": "Close cart notification"
+    }
+  },
+  "search": {
+    "general": {
+      "eyebrow": "Discover",
+      "title": "Search",
+      "placeholder": "Search products, pages and stories",
+      "submit": "Search",
+      "results_with_count": "{{ count }} results for “{{ terms }}”",
+      "no_results": "No results found."
+    },
+    "predictive": {
+      "suggestions": "Suggestions",
+      "products": "Products",
+      "collections": "Collections",
+      "pages": "Pages",
+      "no_results": "No instant matches yet.",
+      "search_for": "Search for “{{ terms }}”"
+    }
+  },
+  "newsletter": {
+    "email": "Email address",
+    "submit": "Join",
+    "success": "Thank you. You are on the list."
+  },
+  "contact": {
+    "details_eyebrow": "Client service",
+    "details_body": "Send a message for product, shipping, return or wholesale inquiries.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send inquiry",
+    "success_title": "Message received.",
+    "success_body": "Thank you. The team will respond through the email address you provided."
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "tags": "Journal tags",
+    "all": "All stories",
+    "empty": "No stories have been published yet.",
+    "by_author": "By {{ author }}",
+    "article_navigation": "More journal stories",
+    "comments": "Comments",
+    "comment_success": "Your comment was submitted.",
+    "name": "Name",
+    "email": "Email",
+    "comment": "Comment",
+    "submit_comment": "Post comment"
+  },
+  "password": {
+    "title": "Private access",
+    "access": "Private access",
+    "password": "Password",
+    "enter": "Enter store",
+    "updates": "Launch notes",
+    "email": "Email address",
+    "notify": "Notify me",
+    "success": "Thank you. You are on the launch list."
+  }
+}

@@ -1,0 +1,39 @@
+name: Theme Check
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: write
+
+concurrency:
+  group: theme-check-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  theme-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Shopify Theme Check
+        uses: shopify/theme-check-action@v2
+        with:
+          theme_root: "."
+          token: ${{ github.token }}
+          base: main
+
+      - name: Locale parity
+        run: node scripts/check-locales.mjs
+
+      - name: Ajax cart contracts
+        run: node scripts/check-ajax-cart.mjs

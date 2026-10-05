@@ -1,0 +1,156 @@
+{
+  "accessibility": { "skip_to_text": "本文へ移動" },
+  "general": {
+    "view_all": "すべて見る",
+    "pagination": { "label": "ページネーション" },
+    "404": {
+      "title": "ページが見つかりません。",
+      "subtext": "お探しのページは移動または削除された可能性があります。",
+      "back_home": "ホームへ戻る"
+    }
+  },
+  "localization": {
+    "country": "国 / 地域",
+    "language": "言語"
+  },
+  "facets": {
+    "from": "最低",
+    "to": "最高",
+    "reset": "リセット",
+    "apply": "適用",
+    "sort": "並び替え",
+    "clear_all": "すべて解除"
+  },
+  "sections": {
+    "announcement": { "label": "お知らせ" },
+    "header": {
+      "menu": "メニューを開く",
+      "primary_navigation": "メインナビゲーション",
+      "mobile_navigation": "モバイルナビゲーション",
+      "search": "検索",
+      "account": "アカウント",
+      "cart": "バッグ"
+    },
+    "footer": {
+      "tagline": "グローバルD2Cローンチを想定したファッションコマースのプロトタイプです。",
+      "navigation": "フッターナビゲーション",
+      "payments": "決済方法",
+      "payment_methods": "利用可能な決済方法",
+      "prototype_notice": "合成ポートフォリオプロジェクト — 実店舗ではありません。"
+    }
+  },
+  "products": {
+    "product": {
+      "variant": "オプション",
+      "quantity": "数量",
+      "add_to_cart": "バッグに追加",
+      "sold_out": "売り切れ",
+      "regular_price": "通常価格",
+      "from_price": "{{ price }}から",
+      "fit_note": "フィット",
+      "materials": "素材",
+      "care": "ケア",
+      "model_info": "モデル・サイズ",
+      "size_guide": "サイズガイド",
+      "shipping_returns": "配送・返品",
+      "shipping_returns_body": "公開前に市場ごとの送料、関税、税金、返品期間を設定する必要があります。",
+      "global_checkout": "グローバル決済",
+      "global_checkout_body": "利用可能な決済方法は、販売者の国、決済プロバイダの資格、購入者の所在地によって異なります。"
+    },
+    "recommendations": {
+      "eyebrow": "さらに見る"
+    }
+  },
+  "collections": {
+    "general": {
+      "collection": "コレクション",
+      "product_count": "{{ count }}点",
+      "no_matches": "商品が見つかりません。"
+    },
+    "sorting": { "title": "並び替え" },
+    "list": {
+      "eyebrow": "コレクションから探す",
+      "title": "コレクション",
+      "empty": "公開中のコレクションはまだありません。"
+    }
+  },
+  "cart": {
+    "general": {
+      "eyebrow": "選択した商品",
+      "title": "ショッピングバッグ",
+      "empty": "バッグは空です。",
+      "continue_shopping": "買い物を続ける",
+      "quantity": "数量",
+      "remove": "削除",
+      "subtotal": "小計",
+      "taxes_shipping": "税金、関税、送料はマーケット設定とチェックアウト条件に基づいて計算されます。",
+      "update": "バッグを更新",
+      "checkout": "チェックアウト"
+    },
+    "notification": {
+      "adding": "追加中…",
+      "added": "バッグに追加しました。",
+      "error": "商品を追加できませんでした。もう一度お試しください。",
+      "view_cart": "バッグを見る",
+      "close": "バッグ通知を閉じる"
+    }
+  },
+  "search": {
+    "general": {
+      "eyebrow": "探す",
+      "title": "検索",
+      "placeholder": "商品・ページ・ストーリーを検索",
+      "submit": "検索",
+      "results_with_count": "「{{ terms }}」の検索結果 {{ count }}件",
+      "no_results": "検索結果がありません。"
+    },
+    "predictive": {
+      "suggestions": "検索候補",
+      "products": "商品",
+      "collections": "コレクション",
+      "pages": "ページ",
+      "no_results": "候補が見つかりません。",
+      "search_for": "「{{ terms }}」を検索"
+    }
+  },
+  "newsletter": {
+    "email": "メールアドレス",
+    "submit": "登録",
+    "success": "ご登録ありがとうございます。"
+  },
+  "contact": {
+    "details_eyebrow": "お問い合わせ",
+    "details_body": "商品、配送、返品、卸売についてお問い合わせください。",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "message": "お問い合わせ内容",
+    "submit": "送信",
+    "success_title": "お問い合わせを受け付けました。",
+    "success_body": "ご入力いただいたメールアドレスへ返信いたします。"
+  },
+  "journal": {
+    "eyebrow": "ジャーナル",
+    "tags": "ジャーナルタグ",
+    "all": "すべての記事",
+    "empty": "まだ記事が公開されていません。",
+    "by_author": "{{ author }} による記事",
+    "article_navigation": "他の記事",
+    "comments": "コメント",
+    "comment_success": "コメントを送信しました。",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "comment": "コメント",
+    "submit_comment": "コメントを投稿"
+  },
+  "password": {
+    "title": "プライベートアクセス",
+    "access": "プライベートアクセス",
+    "password": "パスワード",
+    "enter": "ストアに入る",
+    "updates": "ローンチ情報",
+    "email": "メールアドレス",
+    "notify": "通知を受け取る",
+    "success": "ローンチリストに登録されました。"
+  }
+}
