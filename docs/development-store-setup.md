@@ -32,7 +32,7 @@ fixtures/mode-atelier-products.csv
 주의:
 
 - 최초 import 전에 현재 Shopify 제품 CSV 화면의 필드/미리보기 결과를 확인한다.
-- 이미지 URL은 fixture에 포함하지 않았다. 브랜드용 synthetic image asset은 별도 업로드한다.
+- CSV에는 실제 Shopify Files의 합성 상품 이미지 URL 6개가 포함되어 있다. 9개 전체 합성 에셋의 실제 URL/출처는 `fixtures/visuals/shopify-files.json`과 `fixtures/visuals/`에서 확인한다.
 - 다중 location inventory를 사용하는 경우 inventory CSV/API 흐름을 별도로 사용한다.
 
 ## 4. Collections
@@ -106,3 +106,10 @@ Shopify Search & Discovery에서 storefront filters를 활성화한다.
 ## 10. 증거 고정
 
 검증 결과는 `docs/release-evidence-plan.md` 기준으로 `evidence/release-001/`에 저장한다.
+
+## 현재 연결 (2026-10-05)
+
+- Store: `mode-atelier-fluhoiwk.myshopify.com`; CLI 4.8.4로 검증.
+- Draft theme: `188330770750` / Mode Atelier Dev. 재업로드: `shopify theme push --theme 188330770750 --store mode-atelier-fluhoiwk.myshopify.com --strict`.
+- Admin 콘텐츠는 `fixtures/content-seed.json`, `fixtures/journal-seed.json`, `fixtures/home-localization-seed.json`에서 인수인계한다. 실제 QA 상태는 `evidence/release-001/summary.md` 참조.
+- Live Horizon 유지. unpublished push 성공은 공개 런칭이 아니다.

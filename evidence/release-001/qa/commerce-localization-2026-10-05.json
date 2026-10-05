@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-05",
+  "themeSourceCommit": "b1df32702ae3d28b9d7e0a07b25d283c2fe62ef7",
+  "store": "mode-atelier-fluhoiwk.myshopify.com",
+  "themeId": 188330770750,
+  "environment": "Authenticated Chrome draft preview and native Shopify Admin",
+  "testOrder": {
+    "number": "#1001",
+    "id": "7366557598014",
+    "gateway": "Test Payment Gateway / Bogus",
+    "testOrderBanner": true,
+    "paymentStatus": "Paid",
+    "fulfillmentStatus": "Unfulfilled",
+    "item": "Atelier Leather Tote / One Size / quantity 1",
+    "currency": "KRW",
+    "subtotal": 298000,
+    "shipping": 5000,
+    "total": 303000,
+    "locale": "ja",
+    "country": "JP",
+    "declinedTestValue": "2",
+    "approvedTestValue": "1",
+    "realPayment": false,
+    "evidence": ["commerce/test-payment-declined-ja.jpg", "commerce/test-payment-approved-ja.jpg", "commerce/test-order-admin.jpg"]
+  },
+  "inventoryProbe": {
+    "variantId": "54549527363902",
+    "inventory": 8,
+    "requestedQuantity": 9,
+    "expected": "Native cart/add.js returns 422 and caps available stock as described by Shopify Ajax documentation",
+    "observed": "Native add accepted 9; HTTP 200 observed in earlier equivalent probe. After checkout entry, native cart returned quantity 8 and subtotal 2624000 KRW.",
+    "failureStage": "Ajax inventory error response",
+    "classification": "Live 422 path not reproduced; platform semantics unresolved; checkout reconciliation separately verified",
+    "reproduction": "Open jacket S in draft preview, set Quantity 9, Add to bag; inspect cart, enter Checkout, return to /cart",
+    "cleanup": "Stock restored to 8; temporary jacket S line removed; no order submitted for this probe",
+    "evidence": "commerce/checkout-inventory-reconciled.jpg"
+  },
+  "networkErrorProbe": {
+    "method": "Chrome CDP Network.setBlockedURLs for *cart/add.js* only",
+    "locale": "ja",
+    "observed": "Localized error notice, unchanged badge, aria-busy removed and Add button restored",
+    "cleanup": "Network block list empty; offline false and throughput override removed",
+    "status": "VERIFIED",
+    "evidence": "commerce/ajax-network-error.jpg"
+  },
+  "localization": {
+    "publishedLanguages": ["en", "ko", "ja"],
+    "activeMarkets": ["US", "KR", "JP"],
+    "actualCurrency": "KRW",
+    "autoTranslated": ["ko", "ja"],
+    "manualDraftCopy": "fixtures/home-localization-seed.json",
+    "pdpVariantPreserved": "54549527396670 across en/ko/ja",
+    "searchQueryPreserved": "wool across en/ko/ja",
+    "adminDomainLanguageEvidence": "localization/japan-market-languages.jpg",
+    "knownConflict": "Translate & Adapt still warns language is not in a market despite Admin domain inheritance and actual localized preview routes"
+  },
+  "customerAccount": {
+    "signedOutDialog": "VERIFIED",
+    "ordersProfileEntryLinks": "VERIFIED",
+    "signedIn": "BLOCKED_EXTERNAL: user email/OTP required",
+    "evidence": "commerce/customer-account-entry-ko.jpg"
+  },
+  "notClaimed": ["Real PG integration", "USD/JPY checkout", "Full accessibility audit", "Lighthouse scores", "Contact/newsletter delivery", "Live 422 runtime PASS", "Public production release"]
+}

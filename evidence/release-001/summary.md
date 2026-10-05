@@ -1,56 +1,58 @@
-# Release 001 — in progress
+# Release 001 — partial verification / account authentication gate
 
-Status: **IMPLEMENTED, partial runtime verification**. This is a progress record, not a release-ready claim. File-upload permission is resolved.
+Status: **IMPLEMENTED; targeted runtime VERIFIED; release closeout pending**. Full release readiness is not claimed.
 
-- Updated: 2026-10-05 (Asia/Seoul)
-- Source baseline: `ac69d1075eb845a159ece70b25c479cb7200b488`; visual assignments after this commit were pushed to the same unpublished theme and used for the observations below.
+- Date: 2026-10-05 (Asia/Seoul)
+- Theme source SHA: `b1df32702ae3d28b9d7e0a07b25d283c2fe62ef7`; later documentation/evidence commits do not change the uploaded source.
 - Store: `mode-atelier-fluhoiwk.myshopify.com`
-- Theme: Mode Atelier Dev, ID `188330770750`, unpublished
-- Preview: https://mode-atelier-fluhoiwk.myshopify.com?preview_theme_id=188330770750
-- Editor: https://mode-atelier-fluhoiwk.myshopify.com/admin/themes/188330770750/editor
-- PR: https://github.com/gycha0109-beep/Mode_Atelier/pull/1
+- Unpublished theme: Mode Atelier Dev / `188330770750`
+- [Preview](https://mode-atelier-fluhoiwk.myshopify.com?preview_theme_id=188330770750)
+- [Editor](https://mode-atelier-fluhoiwk.myshopify.com/admin/themes/188330770750/editor)
+- [PR #1](https://github.com/gycha0109-beep/Mode_Atelier/pull/1), branch `feat/shopify-foundation`; main unmerged, Live Horizon preserved.
+- Strict push succeeded with role unpublished. Local Theme Check `[]`, locale key/interpolation parity and Ajax unit contracts passed. Latest hosted CI is in PR checks; the previous b18cd5b CI receipt is historical.
 
-## Confirmed runtime actions
+## Confirmed store configuration
 
-- Initial strict unpublished theme push succeeded; theme list confirmed its ID and unpublished role.
-- The revised product section, locale files and actual visual assignments were pushed successfully to that same unpublished theme. Current local Theme Check and locale key/interpolation checks passed. Baseline CI passed at https://github.com/gycha0109-beep/Mode_Atelier/actions/runs/37203448170 for `ac69d10`; current changes require a new CI run.
-- Nine synthetic images uploaded to Files; actual CDN URLs recorded in `fixtures/visuals/shopify-files.json`. CSV import confirmed 6 active products / 14 variants with images, Online Store only. See `qa/catalog-import-preview.jpg` and `qa/catalog-import-result.jpg`.
-- New Arrivals (6), Outerwear (2), Knitwear (1), Bottoms (1), Accessories (2) confirmed in Admin. Four type-based collections were created on Online Store only. See `qa/collections-admin.jpg`. The existing Home page collection was preserved.
-- Store currency changed to KRW. Business entity and store-address country remain US.
-- Four product metafield definitions created: `custom.materials` and `custom.care` (multi-line), `custom.fit_note` and `custom.model_info` (single-line).
-- `qa/metafield-definitions.jpg` is a historical Admin capture before import; its zero counts reflect that earlier stage. Jacket values confirmed in Admin; materials and model/sizing expanded in the actual PDP.
-- EN/KO/JA published in Admin; US/Korea/Japan Markets active. All Markets currently inherit KRW.
-- Korea/Japan synthetic test shipping zone with `Standard — portfolio test` at 5,000 KRW saved. Korean storefront all-sold-out state resolved after this configuration. This does not establish a carrier contract.
-- Customer-account sign-in links are enabled; Admin exposes current hosted customer-account configuration. Signed-in customer flow is NOT_TESTED.
+Six synthetic active products / fourteen variants / nine original synthetic image Files; actual CDN URLs and source are in fixtures. Five intended collections exist (New Arrivals 6, Outerwear 2, Knitwear 1, Bottoms 1, Accessories 2). Four product metafield definitions; jacket and knit values checked in actual PDP.
 
-## Not yet verified
+Main/footer menus and About, Lookbook, FAQ, Shipping & Returns, Contact, Size Guide, portfolio Privacy/Terms saved. Lookbook renders three original images; FAQ renders five native details. These use the default page template. Unpublished custom FAQ/Lookbook remain unassigned while Horizon is live: avoid duplicate existing HTML when assigning later. Portfolio notices do not replace merchant-reviewed legal policies.
 
-Navigation/journal, Search & Discovery product-type/size filters, Theme Editor controls, remaining cart/error/account paths, all localized routes/content, responsive/accessibility/performance/SEO QA remain pending. No placeholder storefront screenshots are used as final evidence.
+Three visible original Journal posts with images, index/article/previous/next checked; comments disabled. Material Note author is Mode Atelier Studio; the other two retain the Admin account alias. Seed author is intended editorial credit, not a uniform runtime claim.
 
-About, Lookbook and FAQ creation/content were confirmed in Admin. Shipping & Returns and Size Guide content were saved and confirmed by reloading the actual pages. The original title-input failure was worked around using Shopify's content tool for About and the normal page duplicate dialog for the remaining pages. The HTML editor requires initialization and a completed transition to the visual editor before saving; an early save retained the previous body, which was corrected and rechecked. These Admin checks do not replace storefront page QA. `fixtures/content-seed.json` contains the exact synthetic page source; portfolio notices do not replace merchant-reviewed legal policies.
+Search & Discovery installed with explicit permissions: Availability, Price, Product type, Size configured. Optional Color not configured. EN default, KO and JA published; US/Korea/Japan Markets active, all KRW. Korea/Japan Admin explicitly show English/Korean/Japanese inherited. Translate & Adapt's contrary visibility warning persists; actual preview routes work. Public Dev Store remains password protected.
 
-## Runtime smoke results
+KO/JA free auto translation completed with explicit terms consent; draft Home/announcement translated manually, knit name and menu New/About/Journal corrected. Further editorial review remains; no approved merchant policy claim. Korea/Japan synthetic shipping rate is 5,000 KRW, no real carrier contract. Hosted accounts/sign-in links enabled; actual KO login dialog/Orders/Profile links render.
 
-| Scenario | Observation | Status |
+## Runtime results
+
+| Scenario | Actual observation | Status |
 |---|---|---|
-| Jacket variant | S 328,000 → M 338,000 KRW; variant URL updated | PASS |
-| Sold-out variant | L disables Add to bag and accelerated button | PASS |
-| Ajax cart | M × 2, header count 2, cart subtotal 676,000 KRW | PASS |
-| Cart quantity update | M × 1, header count 1, subtotal 338,000 KRW | PASS |
-| Recommendations | Four actual product cards returned | PASS |
-| Cart localization | EN → KO → JA retains M × 1 | PASS |
-| Country switch | JA cart Korea → Japan retains cart | PASS |
-| Checkout entry | Japanese checkout contains M × 1, Japan selected | PASS (entry only) |
-| Payment submission | No gateway; payment button disabled | NOT_TESTED |
-| Predictive search | `wool` suggests jacket; ESC collapses suggestions | PASS for this scenario |
-| Full search | `wool` returns one jacket | PASS for this scenario |
+| Variant | S 328,000 / M 338,000; URL updates; EN→KO→JA retains M | VERIFIED |
+| Sold out | Jacket L disables Add and accelerated checkout | VERIFIED |
+| Ajax success | Native add, live badge, accessible success notice, consistent cart | VERIFIED |
+| Network error | Only cart/add.js blocked with CDP; localized Japanese error, unchanged badge, busy cleared, button restored; block removed | VERIFIED |
+| Partial-stock 422 | Unit fixture refreshes badge after partial mutation; live Dev Store did not return 422 | IMPLEMENTED_UNVERIFIED in live runtime |
+| Inventory | S stock 8; native add 9 accepted; after checkout entry cart returns S×8 / 2,624,000 KRW | VERIFIED for reconciliation; add semantics unresolved |
+| Cart | Quantity/update/remove/empty, multiple products and distinct variants | VERIFIED |
+| Test payment | Test value 2 rejected, retry 1 approved: #1001 / Test order / Paid | VERIFIED, simulated only |
+| Checkout | Japanese/Japan; Tote 298,000 + shipping 5,000 = 303,000 KRW | VERIFIED |
+| Filters | Outerwear+M+price, facet removal, empty/clear, One Size; sorting retains filter | VERIFIED for tested combinations |
+| Search | wool product/page/article, Outerwear→one jacket; query preserved on sort/locale switch | VERIFIED |
+| Predictive | wool product, about page, outer collection, empty result, ESC and input focus | VERIFIED; query-suggestion content not returned in sampled queries |
+| Keyboard | Skip link to main, menu Enter, FAQ Space, filter summary/checkbox/Apply/Clear | VERIFIED for smoke scope |
+| Responsive | Home/collection/PDP/cart/search/Lookbook/Journal/article/FAQ/Contact: 390/768/1440 captures, no observed overflow | VERIFIED for retained captures only |
+| SEO | Native ProductGroup/Article JSON-LD, canonical/description; article type and HTTPS/alt image metadata | VERIFIED for sampled PDP/article |
+| 404 | KO missing-page recovery | VERIFIED |
+| Password | Custom Coming Soon in authenticated Theme Editor | VERIFIED, Admin preview only |
+| Theme Editor | Hero editable dirty state restored; announcement/menus/collection/lookbook/story/newsletter/footer, width/radii, size guide; unused FAQ controls | VERIFIED |
+| Contact/newsletter | Required-field validation; no inquiry/subscription sent | Validation checked, submissions NOT_TESTED |
+| Signed-in account | Email/OTP, avatar/orders/profile | BLOCKED_EXTERNAL |
+| Lighthouse/axe | Not executed; no scores or full accessibility PASS claimed | NOT_TESTED |
 
-Actual screenshots are under `commerce/`, `localization/`, `desktop/` and `qa/`. Captures use authenticated draft preview; public development-store access remains password protected. Checkout capture has empty contact/address fields. No tokens or credentials are recorded.
+Inventory cleanup: Jacket S restored to 8; temporary S lines removed. Test order #1001 remains unfulfilled as evidence; it consumed one tote stock. Do not fulfill, purchase labels or send real customer messages for this order.
 
-## Dependencies and next gate
+## Evidence boundaries / next gate
 
-1. Complete content/navigation and Search & Discovery configuration.
-2. Complete targeted runtime, responsive, keyboard/accessibility, rendered SEO and performance QA.
-3. Verify supported test-payment success/failure if available without merchant onboarding, then finish handover and final evidence review.
+All screenshots are actual draft preview/Admin captures. Permission/translation/editor images establish configuration, not final storefront appearance. Earlier captures can predate content translations/payment-icon changes. Current localized Home captures and current draft are authoritative. Responsive JSON records captured paths/dimensions/lazy image observations; last observation per file is the retained capture. Metafield-definitions image predates import and its zero counts are historical. No credential or OTP is recorded.
 
-Payment: **MERCHANT_ONBOARDING_REQUIRED** for real providers; test transactions NOT_TESTED. Checkout entry is verified separately. USD/JPY customization requires Shopify Payments onboarding. Merchant country is not changed to work around eligibility.
+Next gate: user completes customer-account email/OTP authentication, then verify signed-in Orders/Profile/avatar and final evidence/editorial review. Predictive query suggestions, optional Lighthouse/axe and inquiry/subscription submission remain explicitly untested. Real PG, merchant country/eligibility, USD/JPY, DNS and production publish are external dependencies. No main merge or Live theme publish.

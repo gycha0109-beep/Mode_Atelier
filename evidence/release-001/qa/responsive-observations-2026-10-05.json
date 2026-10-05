@@ -1,0 +1,803 @@
+{
+  "capturedAt": "2026-10-05T09:14:18.540Z",
+  "themeSourceCommit": "b1df32702ae3d28b9d7e0a07b25d283c2fe62ef7",
+  "source": "Actual Chrome draft preview. Captures are chronological; last entry for each file is retained. Offscreen lazy images are not asserted loaded.",
+  "observations": [
+    {
+      "headings": [
+        "Shopping bag"
+      ],
+      "height": 844,
+      "images": [],
+      "overflow": [],
+      "path": "/cart",
+      "scrollWidth": 375,
+      "title": "Your Shopping Cart — Mode Atelier",
+      "width": 390,
+      "evidence": "mobile/cart-empty-390.jpg"
+    },
+    {
+      "headings": [
+        "Products"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Charcoal cropped wool jacket with notch lapels on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black hooded nylon shell with adjustable hem on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/collections/all",
+      "scrollWidth": 753,
+      "title": "Products — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/collection-768.jpg"
+    },
+    {
+      "headings": [
+        "Atelier Leather Tote"
+      ],
+      "height": 1000,
+      "images": [
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": false
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black hooded nylon shell with adjustable hem on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/products/atelier-leather-tote",
+      "scrollWidth": 1425,
+      "title": "Atelier Leather Tote — Mode Atelier",
+      "width": 1440,
+      "evidence": "commerce/pdp-one-size-1440.jpg"
+    },
+    {
+      "headings": [
+        "Atelier Leather Tote"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": false
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black hooded nylon shell with adjustable hem on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/products/atelier-leather-tote",
+      "scrollWidth": 753,
+      "title": "Atelier Leather Tote — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/pdp-768.jpg"
+    },
+    {
+      "headings": [
+        "Atelier Leather Tote"
+      ],
+      "height": 1000,
+      "images": [
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black hooded nylon shell with adjustable hem on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/products/atelier-leather-tote",
+      "scrollWidth": 1425,
+      "title": "Atelier Leather Tote — Mode Atelier",
+      "width": 1440,
+      "evidence": "commerce/pdp-one-size-1440.jpg"
+    },
+    {
+      "headings": [
+        "Atelier Leather Tote"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black hooded nylon shell with adjustable hem on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/products/atelier-leather-tote",
+      "scrollWidth": 753,
+      "title": "Atelier Leather Tote — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/pdp-768.jpg"
+    },
+    {
+      "headings": [
+        "Atelier Leather Tote"
+      ],
+      "height": 844,
+      "images": [
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": false
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Black hooded nylon shell with adjustable hem on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/products/atelier-leather-tote",
+      "scrollWidth": 375,
+      "title": "Atelier Leather Tote — Mode Atelier",
+      "width": 390,
+      "evidence": "mobile/pdp-390.jpg"
+    },
+    {
+      "headings": [
+        "Atelier Leather Tote"
+      ],
+      "height": 844,
+      "images": [
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/ja/products/atelier-leather-tote",
+      "scrollWidth": 375,
+      "title": "Atelier Leather Tote — Mode Atelier",
+      "width": 390,
+      "evidence": "localization/pdp-ja-390.jpg"
+    },
+    {
+      "headings": [
+        "검색"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Charcoal cropped wool jacket with notch lapels on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/ko/search",
+      "scrollWidth": 753,
+      "title": "검색: \"wool\"의 검색 결과 3개 — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/search-768.jpg"
+    },
+    {
+      "headings": [
+        "검색"
+      ],
+      "height": 1000,
+      "images": [
+        {
+          "alt": "Charcoal cropped wool jacket with notch lapels on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/ko/search",
+      "scrollWidth": 1425,
+      "title": "검색: \"wool\"의 검색 결과 3개 — Mode Atelier",
+      "width": 1440,
+      "evidence": "desktop/search-1440.jpg"
+    },
+    {
+      "headings": [
+        "검색"
+      ],
+      "height": 844,
+      "images": [
+        {
+          "alt": "Charcoal cropped wool jacket with notch lapels on an off-white background",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/ko/search",
+      "scrollWidth": 375,
+      "title": "검색: \"wool\"의 검색 결과 3개 — Mode Atelier",
+      "width": 390,
+      "evidence": "mobile/search-390.jpg"
+    },
+    {
+      "headings": [
+        "Quiet structure. Global attitude."
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/",
+      "scrollWidth": 753,
+      "title": "Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/home-768.jpg"
+    },
+    {
+      "headings": [
+        "Quiet structure. Global attitude."
+      ],
+      "height": 844,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/",
+      "scrollWidth": 375,
+      "title": "Mode Atelier",
+      "width": 390,
+      "evidence": "mobile/home-390.jpg"
+    },
+    {
+      "headings": [
+        "Quiet structure. Global attitude."
+      ],
+      "height": 1000,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/",
+      "scrollWidth": 1425,
+      "title": "Mode Atelier",
+      "width": 1440,
+      "evidence": "desktop/home-1440.jpg"
+    },
+    {
+      "headings": [
+        "よくある質問"
+      ],
+      "height": 1024,
+      "images": [],
+      "overflow": [],
+      "path": "/ja/pages/faq",
+      "scrollWidth": 753,
+      "title": "よくある質問 — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/faq-768.jpg"
+    },
+    {
+      "headings": [
+        "よくある質問"
+      ],
+      "height": 1000,
+      "images": [],
+      "overflow": [],
+      "path": "/ja/pages/faq",
+      "scrollWidth": 1425,
+      "title": "よくある質問 — Mode Atelier",
+      "width": 1440,
+      "evidence": "desktop/faq-1440.jpg"
+    },
+    {
+      "headings": [
+        "静かな構造。境界のない感性。"
+      ],
+      "height": 1000,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/ja",
+      "scrollWidth": 1425,
+      "title": "Mode Atelier",
+      "width": 1440,
+      "evidence": "localization/home-ja-1440.jpg"
+    },
+    {
+      "headings": [
+        "고요한 구조. 경계 없는 감각."
+      ],
+      "height": 844,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/ko",
+      "scrollWidth": 375,
+      "title": "Mode Atelier",
+      "width": 390,
+      "evidence": "localization/home-ko-390.jpg"
+    },
+    {
+      "headings": [
+        "Lookbook"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic models wearing neutral layers in a concrete interior",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic still life of wool fabric and a black chair",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/pages/lookbook",
+      "scrollWidth": 753,
+      "title": "Lookbook — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/lookbook-768.jpg"
+    },
+    {
+      "headings": [
+        "Journal"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Seoul / Tokyo / Transit",
+          "loaded": false
+        },
+        {
+          "alt": "Material Note: Soft Structure",
+          "loaded": false
+        },
+        {
+          "alt": "AW26: Between Concrete and Quiet.",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/blogs/journal",
+      "scrollWidth": 753,
+      "title": "Journal — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/journal-768.jpg"
+    },
+    {
+      "headings": [
+        "Material Note: Soft Structure"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Material Note: Soft Structure",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/blogs/journal/material-note-soft-structure",
+      "scrollWidth": 753,
+      "title": "Material Note: Soft Structure — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/article-768.jpg"
+    },
+    {
+      "headings": [
+        "Material Note: Soft Structure"
+      ],
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Material Note: Soft Structure",
+          "loaded": true
+        }
+      ],
+      "overflow": [],
+      "path": "/blogs/journal/material-note-soft-structure",
+      "scrollWidth": 753,
+      "title": "Material Note: Soft Structure — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/article-768.jpg"
+    },
+    {
+      "headings": [
+        "Contact"
+      ],
+      "height": 1024,
+      "images": [],
+      "overflow": [],
+      "path": "/pages/contact",
+      "scrollWidth": 753,
+      "title": "Contact — Mode Atelier",
+      "width": 768,
+      "evidence": "mobile/contact-768.jpg"
+    },
+    {
+      "headings": [
+        "Contact"
+      ],
+      "height": 1000,
+      "images": [],
+      "overflow": [],
+      "path": "/pages/contact",
+      "scrollWidth": 1425,
+      "title": "Contact — Mode Atelier",
+      "width": 1440,
+      "evidence": "desktop/contact-1440.jpg"
+    },
+    {
+      "headings": [
+        "静かな構造。境界のない感性。"
+      ],
+      "height": 1000,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/ja",
+      "scrollWidth": 1425,
+      "title": "Mode Atelier",
+      "width": 1440,
+      "evidence": "localization/home-ja-1440.jpg"
+    },
+    {
+      "headings": [
+        "고요한 구조. 경계 없는 감각."
+      ],
+      "height": 844,
+      "images": [
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Ash crescent shoulder bag with adjustable strap",
+          "loaded": true
+        },
+        {
+          "alt": "Black leather tote with long handles and clean lines",
+          "loaded": true
+        },
+        {
+          "alt": "Ink wide-leg pleated trousers on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Stone crewneck knit with ribbed edges on an off-white background",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: neutral layers and a crescent bag beside concrete architecture",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic fashion editorial: two models in charcoal tailoring in a concrete hall",
+          "loaded": true
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        },
+        {
+          "alt": "Synthetic still life of charcoal wool and a cream knit draped over a black chair",
+          "loaded": false
+        }
+      ],
+      "overflow": [],
+      "path": "/ko",
+      "scrollWidth": 375,
+      "title": "Mode Atelier",
+      "width": 390,
+      "evidence": "localization/home-ko-390.jpg"
+    },
+    {
+      "headings": [
+        "페이지를 찾을 수 없습니다."
+      ],
+      "height": 844,
+      "images": [],
+      "overflow": [],
+      "path": "/ko/pages/mode-atelier-qa-missing",
+      "scrollWidth": 375,
+      "title": "404를 찾을 수 없음 — Mode Atelier",
+      "width": 390,
+      "evidence": "mobile/404-ko-390.jpg"
+    }
+  ]
+}
