@@ -1,44 +1,65 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {}
-    },
     "lookbook": {
       "type": "lookbook-grid",
       "blocks": {
+        "hero": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hero-editorial.jpg",
+            "eyebrow": "AW26 / SEOUL",
+            "title": "Between concrete and quiet.",
+            "text": "<p>A study of quiet structure, transit, and soft tailoring.</p>",
+            "product_name": "Mode Atelier / Autumn Winter 2026",
+            "link": "",
+            "ratio": "landscape",
+            "caption": ""
+          }
+        },
         "look1": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/editorial-transit.jpg",
+            "eyebrow": "LOOK 01 / SEOUL",
+            "title": "Quiet structure",
+            "text": "<p>Soft tailoring shaped for movement through the city. Defined shoulders meet an easy, unforced silhouette.</p>",
+            "product_name": "Architectural Wool Jacket",
+            "link": "/products/architectural-wool-jacket",
             "ratio": "portrait",
-            "caption": "Look 01 / Seoul"
+            "caption": ""
           }
         },
-        "look2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/hero-editorial.jpg",
-            "ratio": "landscape",
-            "caption": "Look 02 / In transit"
-          }
-        },
-        "look3": {
+        "material": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/editorial-material.jpg",
+            "eyebrow": "MATERIAL 02 / SOFT STRUCTURE",
+            "title": "Texture in motion",
+            "text": "<p>Wool, knit and compact layers soften the line between structure and everyday movement.</p>",
+            "product_name": "Soft Structure Knit",
+            "link": "/products/soft-structure-knit",
             "ratio": "portrait",
-            "caption": "Material 03 / Soft structure"
+            "caption": ""
           }
         }
       },
-      "block_order": ["look1", "look2", "look3"],
+      "block_order": [
+        "hero",
+        "look1",
+        "material"
+      ],
       "settings": {
-        "kicker": "EDITORIAL 01",
+        "kicker": "AW26",
         "heading": "Between concrete and quiet.",
-        "text": "<p>Wool against concrete. Easy layers for the hours between one city and the next.</p>"
+        "text": "<p>A study of quiet structure, transit, and soft tailoring. Seoul, after the rush.</p>",
+        "featured_collection": "new-arrivals",
+        "shop_kicker": "THE EDIT",
+        "shop_heading": "Shop the edit",
+        "shop_link_label": "View collection"
       }
     }
   },
-  "order": ["main", "lookbook"]
+  "order": [
+    "lookbook"
+  ]
 }
