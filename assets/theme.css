@@ -450,7 +450,7 @@ summary { cursor: pointer; font-size: 13px; text-transform: uppercase; letter-sp
   .lookbook-story:nth-child(even) .lookbook-story__copy {
     grid-column: 6 / -1;
   }
-  .lookbook-story:nth-child(even) .lookbook-story__media { order: 2; }
+  .lookbook-story:nth-child(even) .lookbook-story__media { grid-column: 4 / -1; order: 2; }
   .lookbook-story:nth-child(even) .lookbook-story__copy { grid-column: 1 / span 3; order: 1; }
   .lookbook-editorial__product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
